@@ -240,7 +240,7 @@ public class ControllerSecondExample : MonoBehaviour
 
             btnFirst.text = "A e E";
             btnSecond.text = "U e A";
-            btnThird.text = "A e " + "à".ToUpper();
+            btnThird.text = "I e " + "à".ToUpper();
             btnFourth.text = "O e E";
             btnFive.text = "I e O";
         }
@@ -278,7 +278,7 @@ public class ControllerSecondExample : MonoBehaviour
     public void ThirdBtn()
     {
         if (word == "LIBRO" && btnThird.text == "I e O" || word == "CASA" && btnThird.text == "A e A"
-            || word == "città".ToUpper() && btnThird.text == "A e " + "à".ToUpper())
+            || word == "città".ToUpper() && btnThird.text == "I e " + "à".ToUpper())
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();

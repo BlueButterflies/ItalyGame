@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 231793968}
   - component: {fileID: 231793967}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: fifth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 677320174}
+      - m_Target: {fileID: 677320177}
         m_TargetAssemblyTypeName: MissingVowelsThirdExample, Assembly-CSharp
         m_MethodName: FifthBtn
         m_Mode: 1
@@ -347,7 +347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677320175}
   - component: {fileID: 677320176}
-  - component: {fileID: 677320174}
+  - component: {fileID: 677320177}
   m_Layer: 0
   m_Name: MissingVowels
   m_TagString: Untagged
@@ -355,50 +355,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &677320174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677320173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1370715289be12748a92f4bbdd00d435, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1881332811}
-  btnFirst: {fileID: 1226694311}
-  btnSecond: {fileID: 1479184001}
-  btnThird: {fileID: 2054776368}
-  btnFourth: {fileID: 1243562813}
-  btnFive: {fileID: 231793967}
-  images: {fileID: 861406549}
-  goose: {fileID: 21300000, guid: 1835971f0a7dc12448c6f1c51c462947, type: 3}
-  island: {fileID: 21300000, guid: 9fb0dc1aeb941b3438ecbd4ad3e8e10d, type: 3}
-  umbrella: {fileID: 21300000, guid: d3a6fa7c6466fe74a98a9794499893b3, type: 3}
-  boll: {fileID: 21300000, guid: 65399e4b0041b5242ac419b0fd924ba0, type: 3}
-  flowers: {fileID: 21300000, guid: a5107b72455699c44b4cb5c89c1d7793, type: 3}
-  cat: {fileID: 21300000, guid: 80b72430af33e8b448ec63de1c0ce5fc, type: 3}
-  wing: {fileID: 21300000, guid: a80e0ba8a65a2f445a0b11224b8f0c87, type: 3}
-  funnel: {fileID: 21300000, guid: a41c00aecb636e843a9327e2c51825e0, type: 3}
-  bee: {fileID: 21300000, guid: c79daf055dfd0084a922a93e3a07352f, type: 3}
-  candles: {fileID: 21300000, guid: b13880b417d8a2a458ebe8cee6a27bd8, type: 3}
-  bird: {fileID: 21300000, guid: 75e7430f22e6ce44f8e06bd1a8786d7c, type: 3}
-  strawberry: {fileID: 21300000, guid: 8721599f91906dd47b5966ec8eb4b5ad, type: 3}
-  fungus: {fileID: 21300000, guid: d44f70337befb6d4aad4a4e21fe2c8b3, type: 3}
-  donkey: {fileID: 21300000, guid: 7fdf25dd495bdd441add171a609c0d84, type: 3}
-  igloo: {fileID: 21300000, guid: 5b528e189d7e6964684411d5f20578f6, type: 3}
-  elf: {fileID: 21300000, guid: 6bcd152ccd409cc43bbbf1b77b233f7d, type: 3}
-  hippopotamus: {fileID: 21300000, guid: 76fcce2ebd5566744a4ddf6911a349fa, type: 3}
-  rainbow: {fileID: 21300000, guid: da6017026a79d1245a84e40388c410b3, type: 3}
-  duck: {fileID: 21300000, guid: 7a5a5c1561778e34985ed4caac637541, type: 3}
-  clock: {fileID: 21300000, guid: aadba02e0a39e2e4d80368676ccbcf0c, type: 3}
-  grape: {fileID: 21300000, guid: baa887976b7eb4c44ab49f74a0af5f52, type: 3}
-  one: {fileID: 21300000, guid: 0f21c162255440e4ba350ea0d99bb6f7, type: 3}
-  audioClips:
-  - {fileID: 8300000, guid: a3c5e0044c438e742bbb6acea65e8845, type: 3}
-  - {fileID: 8300000, guid: 03e71a78977166543968a66e95e904ec, type: 3}
 --- !u!4 &677320175
 Transform:
   m_ObjectHideFlags: 0
@@ -510,6 +466,50 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &677320177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677320173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1370715289be12748a92f4bbdd00d435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1881332811}
+  btnFirst: {fileID: 1226694311}
+  btnSecond: {fileID: 1479184001}
+  btnThird: {fileID: 2054776368}
+  btnFourth: {fileID: 1243562813}
+  btnFifth: {fileID: 231793967}
+  images: {fileID: 861406549}
+  goose: {fileID: 21300000, guid: 1835971f0a7dc12448c6f1c51c462947, type: 3}
+  island: {fileID: 21300000, guid: 9fb0dc1aeb941b3438ecbd4ad3e8e10d, type: 3}
+  umbrella: {fileID: 21300000, guid: d3a6fa7c6466fe74a98a9794499893b3, type: 3}
+  boll: {fileID: 21300000, guid: 65399e4b0041b5242ac419b0fd924ba0, type: 3}
+  flowers: {fileID: 21300000, guid: a5107b72455699c44b4cb5c89c1d7793, type: 3}
+  cat: {fileID: 21300000, guid: 80b72430af33e8b448ec63de1c0ce5fc, type: 3}
+  wing: {fileID: 21300000, guid: a80e0ba8a65a2f445a0b11224b8f0c87, type: 3}
+  funnel: {fileID: 21300000, guid: a41c00aecb636e843a9327e2c51825e0, type: 3}
+  bee: {fileID: 21300000, guid: c79daf055dfd0084a922a93e3a07352f, type: 3}
+  candles: {fileID: 21300000, guid: b13880b417d8a2a458ebe8cee6a27bd8, type: 3}
+  bird: {fileID: 21300000, guid: 75e7430f22e6ce44f8e06bd1a8786d7c, type: 3}
+  strawberry: {fileID: 21300000, guid: 8721599f91906dd47b5966ec8eb4b5ad, type: 3}
+  fungus: {fileID: 21300000, guid: d44f70337befb6d4aad4a4e21fe2c8b3, type: 3}
+  donkey: {fileID: 21300000, guid: 7fdf25dd495bdd441add171a609c0d84, type: 3}
+  igloo: {fileID: 21300000, guid: 5b528e189d7e6964684411d5f20578f6, type: 3}
+  elf: {fileID: 21300000, guid: 6bcd152ccd409cc43bbbf1b77b233f7d, type: 3}
+  hippopotamus: {fileID: 21300000, guid: 76fcce2ebd5566744a4ddf6911a349fa, type: 3}
+  rainbow: {fileID: 21300000, guid: da6017026a79d1245a84e40388c410b3, type: 3}
+  duck: {fileID: 21300000, guid: 7a5a5c1561778e34985ed4caac637541, type: 3}
+  clock: {fileID: 21300000, guid: aadba02e0a39e2e4d80368676ccbcf0c, type: 3}
+  grape: {fileID: 21300000, guid: baa887976b7eb4c44ab49f74a0af5f52, type: 3}
+  one: {fileID: 21300000, guid: 0f21c162255440e4ba350ea0d99bb6f7, type: 3}
+  audioClips:
+  - {fileID: 8300000, guid: a3c5e0044c438e742bbb6acea65e8845, type: 3}
+  - {fileID: 8300000, guid: 03e71a78977166543968a66e95e904ec, type: 3}
 --- !u!1 &861406547
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 677320174}
+      - m_Target: {fileID: 677320177}
         m_TargetAssemblyTypeName: MissingVowelsThirdExample, Assembly-CSharp
         m_MethodName: FirstBtn
         m_Mode: 1
@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 1226694312}
   - component: {fileID: 1226694311}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: first
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 1243562814}
   - component: {fileID: 1243562813}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: fourth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 677320174}
+      - m_Target: {fileID: 677320177}
         m_TargetAssemblyTypeName: MissingVowelsThirdExample, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
@@ -1110,7 +1110,7 @@ GameObject:
   - component: {fileID: 1479184002}
   - component: {fileID: 1479184001}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: second
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 677320174}
+      - m_Target: {fileID: 677320177}
         m_TargetAssemblyTypeName: MissingVowelsThirdExample, Assembly-CSharp
         m_MethodName: Return
         m_Mode: 1
@@ -1438,7 +1438,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1463,7 +1463,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 677320174}
+      - m_Target: {fileID: 677320177}
         m_TargetAssemblyTypeName: MissingVowelsThirdExample, Assembly-CSharp
         m_MethodName: ThirdBtn
         m_Mode: 1
@@ -1673,7 +1673,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1698,7 +1698,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 677320174}
+      - m_Target: {fileID: 677320177}
         m_TargetAssemblyTypeName: MissingVowelsThirdExample, Assembly-CSharp
         m_MethodName: FourthBtn
         m_Mode: 1
@@ -1887,7 +1887,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1912,7 +1912,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 677320174}
+      - m_Target: {fileID: 677320177}
         m_TargetAssemblyTypeName: MissingVowelsThirdExample, Assembly-CSharp
         m_MethodName: SecondBtn
         m_Mode: 1
@@ -2058,7 +2058,7 @@ GameObject:
   - component: {fileID: 2054776369}
   - component: {fileID: 2054776368}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: third
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
