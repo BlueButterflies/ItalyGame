@@ -41,6 +41,13 @@ public class ControllerSecondExample : MonoBehaviour
     private string[] words = { "MELE","CANE", "UVA", "LUNA", "SOLE", "PIPA", "NIDO", "RAMO", "CUBO", "LIBRO",
                                "MANI", "MOTO", "MOSCA", "CASA", "FOCA", "OCA","città".ToUpper()};
     private string word;
+
+    private bool firstBtnTrue;
+    private bool secondBtnTrue;
+    private bool thirdBtnTrue;
+    private bool fourthBtnTrue;
+    private bool fifthBtnTrue;
+
     #endregion
 
     void Start()
@@ -54,8 +61,7 @@ public class ControllerSecondExample : MonoBehaviour
     {
         word = words[Random.Range(0, words.Length)];
 
-        //Debug.Log(word);
-
+        #region Check words and change buttons text 
         if (word == "CANE")
         {
             text.text = "C_N_";
@@ -244,13 +250,63 @@ public class ControllerSecondExample : MonoBehaviour
             btnFourth.text = "O e E";
             btnFive.text = "I e O";
         }
+        #endregion
+
+        #region Check bool
+        if (word == "CANE" && btnFirst.text == "A e E" || word == "NIDO" && btnFirst.text == "I e O" || word == "MANI" && btnFirst.text == "A e I"
+             || word == "OCA" && btnFirst.text == "O e A" || word == "MOSCA" && btnFirst.text == "O e A")
+        {
+            firstBtnTrue =  true;
+
+            secondBtnTrue = false;
+            thirdBtnTrue = false;
+            fourthBtnTrue = false;
+            fifthBtnTrue = false;
+        }
+        else if (word == "UVA" && btnSecond.text == "U e A" || word == "RAMO" && btnSecond.text == "A e O" || word == "FOCA" && btnSecond.text == "O e A")
+        {
+            secondBtnTrue = true;
+
+            firstBtnTrue = false;
+            thirdBtnTrue = false;
+            fourthBtnTrue = false;
+            fifthBtnTrue = false;
+        }
+        else if (word == "LIBRO" && btnThird.text == "I e O" || word == "CASA" && btnThird.text == "A e A"
+            || word == "città".ToUpper() && btnThird.text == "I e " + "à".ToUpper())
+        {
+            thirdBtnTrue = true;
+
+            secondBtnTrue = false;
+            firstBtnTrue = false;
+            fourthBtnTrue = false;
+            fifthBtnTrue = false;
+        }
+        else if (word == "MELE" && btnFourth.text == "E e E" || word == "SOLE" && btnFourth.text == "O e E" || word == "MOTO" && btnFourth.text == "O e O")
+        {
+            fourthBtnTrue = true;
+
+            secondBtnTrue = false;
+            thirdBtnTrue = false;
+            firstBtnTrue = false;
+            fifthBtnTrue = false;
+        }
+        else if (word == "LUNA" && btnFive.text == "U e A" || word == "PIPA" && btnFive.text == "I e A" || word == "CUBO" && btnFive.text == "U e O")
+        {
+            fifthBtnTrue = true;
+
+            secondBtnTrue = false;
+            thirdBtnTrue = false;
+            fourthBtnTrue = false;
+            firstBtnTrue = false;
+        }
+        #endregion
     }
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (word == "CANE" && btnFirst.text == "A e E" || word == "NIDO" && btnFirst.text == "I e O" || word == "MANI" && btnFirst.text == "A e I"
-             || word == "OCA" && btnFirst.text == "O e A" || word == "MOSCA" && btnFirst.text == "O e A")
+        if (firstBtnTrue)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -264,7 +320,7 @@ public class ControllerSecondExample : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (word == "UVA" && btnSecond.text == "U e A" || word == "RAMO" && btnSecond.text == "A e O" || word == "FOCA" && btnSecond.text == "O e A")
+        if (secondBtnTrue)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -277,8 +333,7 @@ public class ControllerSecondExample : MonoBehaviour
 
     public void ThirdBtn()
     {
-        if (word == "LIBRO" && btnThird.text == "I e O" || word == "CASA" && btnThird.text == "A e A"
-            || word == "città".ToUpper() && btnThird.text == "I e " + "à".ToUpper())
+        if (thirdBtnTrue)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -291,7 +346,7 @@ public class ControllerSecondExample : MonoBehaviour
 
     public void FourthBtn()
     {
-        if (word == "MELE" && btnFourth.text == "E e E" || word == "SOLE" && btnFourth.text == "O e E" || word == "MOTO" && btnFourth.text == "O e O")
+        if (fourthBtnTrue)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -304,7 +359,7 @@ public class ControllerSecondExample : MonoBehaviour
 
     public void FifthBtn()
     {
-        if (word == "LUNA" && btnFive.text == "U e A" || word == "PIPA" && btnFive.text == "I e A" || word == "CUBO" && btnFive.text == "U e O")
+        if (fifthBtnTrue)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -319,7 +374,7 @@ public class ControllerSecondExample : MonoBehaviour
     #region Buttons Return, Exit, Next
     public void Return()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Exit()

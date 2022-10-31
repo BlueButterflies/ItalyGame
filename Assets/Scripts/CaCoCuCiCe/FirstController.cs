@@ -48,92 +48,103 @@ public class FirstController : MonoBehaviour
     {
         word = words[Random.Range(0, words.Length)];
 
-        //Debug.Log(word);
-
+        #region Check word
         if (word == "CASA")
         {
             text.text = "__SA";
             images.sprite = house;
-            CA = true;
         }
         else if (word == "CAVALLO")
         {
             text.text = "__VALLO";
             images.sprite = horse;
-            CA = true;
         }
         else if (word == "CANDELE")
         {
             text.text = "__NDELE";
             images.sprite = candles;
-            CA = true;
         }
         else if (word == "OCA")
         {
             text.text = "O__";
             images.sprite = goose;
-            CA = true;
         }
         else if (word == "FOCA")
         {
             text.text = "FO__";
             images.sprite = seaCalf;
-            CA = true;
         }
         else if (word == "CAPPELLO")
         {
             text.text = "__PPELLO";
             images.sprite = hat;
-            CA = true;
         }
         else if (word == "CAMALEONTE")
         {
             text.text = "__MALEONTE";
             images.sprite = chameleon;
-            CA = true;
         }
         else if (word == "CALZE")
         {
             text.text = "__LZE";
             images.sprite = socks;
-            CA = true;
         }
         else if (word == "CORDA")
         {
             text.text = "__RDA";
             images.sprite = rope;
-            CO = true;
         }
         else if (word == "COLLANA")
         {
             text.text = "__LLANA";
             images.sprite = necklace;
-            CO = true;
         }
         else if (word == "COLONNA")
         {
             text.text = "__LONNA";
             images.sprite = column;
-            CO = true;
         }
         else if (word == "CURVA")
         {
             text.text = "__RVA";
             images.sprite = bend;
-            CU = true;
         }
         else if (word == "CUCCHIAIO")
         {
             text.text = "__CCHIAIO";
             images.sprite = tableSpoon;
-            CU = true;
         }
         else if (word == "CUBO")
         {
             text.text = "__BO";
             images.sprite = cube;
-            CU = true;
         }
+        #endregion
+
+        #region Check bool
+        if (word == "CAVALLO" || word == "CASA" || word == "CANDELE" || word == "CAPPELLO" 
+            || word == "CALZE" || word == "CAMALEONTE" || word == "OCA" || word == "FOCA")
+        {
+            CA = true;
+
+            CO = false;
+            CU = false;
+        }
+        else if (word == "CORDA" || word == "COLLANA" || word == "COLONNA")
+        {
+            CO = true;
+
+            CA = false;
+            CU = false;
+        }
+        else if (word == "CURVA" || word == "CUCCHIAIO" || word == "CUBO")
+        {
+            CU = true;
+
+            CO = false;
+            CA = false;
+        }
+        #endregion
     }
 
     #region Buttons Answer
@@ -181,7 +192,7 @@ public class FirstController : MonoBehaviour
     #region Buttons Return, Exit, Next
     public void Return()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Exit()

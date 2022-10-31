@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 325522225}
   - component: {fileID: 325522226}
-  - component: {fileID: 325522224}
+  - component: {fileID: 325522227}
   m_Layer: 0
   m_Name: MissingVowelsController
   m_TagString: Untagged
@@ -225,47 +225,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &325522224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325522223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3581bf8c2b1a4444cba01ec09ddcf02d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1526690803}
-  btnFirst: {fileID: 1127455525}
-  btnSecond: {fileID: 400316033}
-  btnThird: {fileID: 1605918984}
-  btnFourth: {fileID: 845312743}
-  btnFifth: {fileID: 1775952939}
-  btnSixth: {fileID: 1996813389}
-  btnSeventh: {fileID: 1417569471}
-  btnEighth: {fileID: 1233698264}
-  images: {fileID: 1558733392}
-  lion: {fileID: 21300000, guid: e78eaa619b071bf43891b522cc18d613, type: 3}
-  fire: {fileID: 21300000, guid: fb87d11403393874c92cc9b8f855e5bc, type: 3}
-  tire: {fileID: 21300000, guid: eb7d81b541218894c8a26909a3849176, type: 3}
-  heart: {fileID: 21300000, guid: 439f65c128604e543bf09213caf7ada0, type: 3}
-  flake: {fileID: 21300000, guid: f68d0b4b77d51294bb91ae4f56e8615b, type: 3}
-  dish: {fileID: 21300000, guid: ef422193bc4f62d4382317da9a6fed56, type: 3}
-  feet: {fileID: 21300000, guid: 5a88cfb2064675f4999aa3a5e002920a, type: 3}
-  violet: {fileID: 21300000, guid: f4d5053c66db9114bb6f4a474d148538, type: 3}
-  schoolBack: {fileID: 21300000, guid: 172e5cfcf73d0b043aca386c02b2a9e9, type: 3}
-  plant: {fileID: 21300000, guid: 0d4852f19e69bac43bff1f7bbf357278, type: 3}
-  rain: {fileID: 21300000, guid: 24ab2c5be3cb1094ba30fc3a36eebdee, type: 3}
-  cook: {fileID: 21300000, guid: e01f44fe7ffb8754d8dc1fcb372d6daa, type: 3}
-  honey: {fileID: 21300000, guid: 8ed9f5c8d29811c44b4f7680ee93a166, type: 3}
-  car: {fileID: 21300000, guid: 775ee5e6df18488459c4c9e89ba2b985, type: 3}
-  air: {fileID: 21300000, guid: 687848c4f51d2c94fafefe6b51b105f2, type: 3}
-  flower: {fileID: 21300000, guid: da40d1a1a15e0db409727e4e0d8d9641, type: 3}
-  audioClips:
-  - {fileID: 8300000, guid: a3c5e0044c438e742bbb6acea65e8845, type: 3}
-  - {fileID: 8300000, guid: 03e71a78977166543968a66e95e904ec, type: 3}
 --- !u!4 &325522225
 Transform:
   m_ObjectHideFlags: 0
@@ -377,6 +336,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &325522227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325522223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3581bf8c2b1a4444cba01ec09ddcf02d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1526690803}
+  images: {fileID: 1558733392}
+  lion: {fileID: 21300000, guid: 03a3e51c45e2e4343a8c2a5f466764da, type: 3}
+  fire: {fileID: 21300000, guid: fb87d11403393874c92cc9b8f855e5bc, type: 3}
+  tire: {fileID: 21300000, guid: eb7d81b541218894c8a26909a3849176, type: 3}
+  heart: {fileID: 21300000, guid: 439f65c128604e543bf09213caf7ada0, type: 3}
+  flake: {fileID: 21300000, guid: f68d0b4b77d51294bb91ae4f56e8615b, type: 3}
+  dish: {fileID: 21300000, guid: ef422193bc4f62d4382317da9a6fed56, type: 3}
+  feet: {fileID: 21300000, guid: 5a88cfb2064675f4999aa3a5e002920a, type: 3}
+  violet: {fileID: 21300000, guid: f4d5053c66db9114bb6f4a474d148538, type: 3}
+  schoolBack: {fileID: 21300000, guid: 172e5cfcf73d0b043aca386c02b2a9e9, type: 3}
+  plant: {fileID: 21300000, guid: 0d4852f19e69bac43bff1f7bbf357278, type: 3}
+  rain: {fileID: 21300000, guid: 24ab2c5be3cb1094ba30fc3a36eebdee, type: 3}
+  cook: {fileID: 21300000, guid: e01f44fe7ffb8754d8dc1fcb372d6daa, type: 3}
+  honey: {fileID: 21300000, guid: 8ed9f5c8d29811c44b4f7680ee93a166, type: 3}
+  car: {fileID: 21300000, guid: 775ee5e6df18488459c4c9e89ba2b985, type: 3}
+  air: {fileID: 21300000, guid: 687848c4f51d2c94fafefe6b51b105f2, type: 3}
+  flower: {fileID: 21300000, guid: da40d1a1a15e0db409727e4e0d8d9641, type: 3}
+  airport: {fileID: 21300000, guid: 986cb17ad494b4b4e881297349e46f98, type: 3}
+  bus: {fileID: 21300000, guid: 4b67c7e4ce47caa4fac48ea6f7ffbc2d, type: 3}
+  museum: {fileID: 21300000, guid: fbe2aa9f5f16a6e49a205801eda902de, type: 3}
+  audioClips:
+  - {fileID: 8300000, guid: a3c5e0044c438e742bbb6acea65e8845, type: 3}
+  - {fileID: 8300000, guid: 03e71a78977166543968a66e95e904ec, type: 3}
 --- !u!1 &400316031
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,11 +485,11 @@ RectTransform:
   m_Children:
   - {fileID: 845312742}
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43, y: -208}
+  m_AnchoredPosition: {x: 41, y: -206}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &440026671
@@ -541,7 +536,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: FourthBtn
         m_Mode: 1
@@ -623,7 +618,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -674,7 +669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: Return
         m_Mode: 1
@@ -837,11 +832,11 @@ RectTransform:
   m_Children:
   - {fileID: 1127455524}
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -797, y: -104}
+  m_AnchoredPosition: {x: -700, y: 61}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850531493
@@ -888,7 +883,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: FirstBtn
         m_Mode: 1
@@ -971,11 +966,11 @@ RectTransform:
   m_Children:
   - {fileID: 1605918983}
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -456, y: -164}
+  m_AnchoredPosition: {x: -500, y: -164}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &906555139
@@ -1022,7 +1017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: ThirdBtn
         m_Mode: 1
@@ -1206,11 +1201,11 @@ RectTransform:
   m_Children:
   - {fileID: 1233698263}
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 565, y: -412}
+  m_AnchoredPosition: {x: 797, y: -23.000008}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087406912
@@ -1257,7 +1252,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: EighthBtn
         m_Mode: 1
@@ -1340,11 +1335,11 @@ RectTransform:
   m_Children:
   - {fileID: 1417569470}
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -265, y: -414}
+  m_AnchoredPosition: {x: -230, y: -239}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087901630
@@ -1391,7 +1386,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: SeventhBtn
         m_Mode: 1
@@ -1622,11 +1617,11 @@ RectTransform:
   m_Children:
   - {fileID: 1775952938}
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 156, y: -423}
+  m_AnchoredPosition: {x: 300, y: -287}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1213641465
@@ -1673,7 +1668,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: FifthBtn
         m_Mode: 1
@@ -1835,7 +1830,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1886,7 +1881,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
@@ -2016,6 +2011,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417569469}
   m_CullTransparentMesh: 1
+--- !u!1 &1464426622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464426623}
+  - component: {fileID: 1464426625}
+  - component: {fileID: 1464426624}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1464426623
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464426622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1874955259}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.5, y: -449}
+  m_SizeDelta: {x: 1925, y: 182}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1464426624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464426622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2ea4e9c4fd2bca74ab8c537cf15429db, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1464426625
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464426622}
+  m_CullTransparentMesh: 1
 --- !u!1 &1489428246
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,11 +2120,11 @@ RectTransform:
   m_Children:
   - {fileID: 1996813388}
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 368, y: -208}
+  m_AnchoredPosition: {x: 528, y: -100}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1489428248
@@ -2100,7 +2171,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: SixthBtn
         m_Mode: 1
@@ -2181,11 +2252,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: 27}
+  m_AnchoredPosition: {x: -3, y: 60.999996}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526690803
@@ -2288,7 +2359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e78eaa619b071bf43891b522cc18d613, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03a3e51c45e2e4343a8c2a5f466764da, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2339,11 +2410,11 @@ RectTransform:
   m_Children:
   - {fileID: 400316032}
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -658, y: -408}
+  m_AnchoredPosition: {x: -825, y: -223}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1604280713
@@ -2390,7 +2461,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: SecondBtn
         m_Mode: 1
@@ -2555,7 +2626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1775952939
@@ -2631,6 +2702,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1558733391}
+  - {fileID: 1464426623}
   - {fileID: 1526690802}
   - {fileID: 850531492}
   - {fileID: 1604280712}
@@ -2801,12 +2873,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1874955259}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 807, y: -433}
-  m_SizeDelta: {x: 300, y: 150}
+  m_AnchoredPosition: {x: 828.5, y: -358.23}
+  m_SizeDelta: {x: 263, y: 188.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2141633146
 MonoBehaviour:
@@ -2852,7 +2924,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325522224}
+      - m_Target: {fileID: 325522227}
         m_TargetAssemblyTypeName: MissingVowelsController, Assembly-CSharp
         m_MethodName: Next
         m_Mode: 1

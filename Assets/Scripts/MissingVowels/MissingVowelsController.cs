@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,14 +28,25 @@ public class MissingVowelsController : MonoBehaviour
     public Sprite car;
     public Sprite air;
     public Sprite flower;
-
+    public Sprite airport;
+    public Sprite bus;
+    public Sprite museum;
 
     public AudioClip[] audioClips;
     private AudioSource audioSource;
 
     private string[] words = { "LEONE", "FUOCO", "CUORE", "RUOTA", "FIOCCO", "PIATTO", "PIEDI", "VIOLA", "ZAINO",
-                               "PIANTA", "PIOGGIA", "CUOCO", "AEREO", "AUTO", "FIORE", "MIELE"};
+                               "PIANTA", "PIOGGIA", "CUOCO", "AEREO", "AEROPORTO", "AUTO", "FIORE", "MIELE", "AUTOBUS", "MUSEO"};
     private string word;
+
+    private bool firstBtn;
+    private bool secondBtn;
+    private bool thirdBtn;
+    private bool fourthBtn;
+    private bool fifthBtn;
+    private bool sixthBtn;
+    private bool seventBtn;
+    private bool eighthBtn;
     #endregion
 
     public void Start()
@@ -48,8 +60,7 @@ public class MissingVowelsController : MonoBehaviour
     {
         word = words[Random.Range(0, words.Length)];
 
-        Debug.Log(word);
-
+        #region Check words
         if (word == "RUOTA")
         {
             text.text = "R__TA";
@@ -115,10 +126,20 @@ public class MissingVowelsController : MonoBehaviour
             text.text = "__REO";
             images.sprite = air;
         }
+        else if (word == "AEREOPORTO")
+        {
+            text.text = "__REOPORTO";
+            images.sprite = airport;
+        }
         else if (word == "AUTO")
         {
             text.text = "__TO";
             images.sprite = car;
+        }
+        else if (word == "AUTOBUS")
+        {
+            text.text = "__TOBUS";
+            images.sprite = bus;
         }
         else if (word == "FIORE")
         {
@@ -130,12 +151,117 @@ public class MissingVowelsController : MonoBehaviour
             text.text = "M__LE";
             images.sprite = honey;
         }
+        else if (word == "MUSEO")
+        {
+            text.text = "MUS__";
+            images.sprite = museum;
+        }
+        #endregion
+
+        #region Check bool
+        if (word == "LEONE" || word == "MUSEO")
+        {
+            firstBtn = true;
+
+            secondBtn = false;
+            thirdBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+            sixthBtn = false;
+            seventBtn = false;
+            eighthBtn = false;
+        }
+        else if (word == "PIOGGIA" || word == "FIOCCO" || word == "VIOLA")
+        {
+            secondBtn = true;
+
+            firstBtn = false;
+            thirdBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+            sixthBtn = false;
+            seventBtn = false;
+            eighthBtn = false;
+        }
+        else if (word == "FUOCO" || word == "CUORE" || word == "RUOTA" || word == "CUOCO")
+        {
+            thirdBtn = true;
+
+            firstBtn = false;
+            secondBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+            sixthBtn = false;
+            seventBtn = false;
+            eighthBtn = false;
+        }
+        else if (word == "PIEDI" || word == "MIELE")
+        {
+            fourthBtn = true;
+
+            firstBtn = false;
+            thirdBtn = false;
+            secondBtn = false;
+            fifthBtn = false;
+            sixthBtn = false;
+            seventBtn = false;
+            eighthBtn = false;
+        }
+        else if (word == "PIATTO" || word == "PIANTA")
+        {
+            fifthBtn = true;
+
+            firstBtn = false;
+            thirdBtn = false;
+            fourthBtn = false;
+            secondBtn = false;
+            sixthBtn = false;
+            seventBtn = false;
+            eighthBtn = false;
+        }
+        else if (word == "ZAINO")
+        {
+            sixthBtn = true;
+
+            firstBtn = false;
+            thirdBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+            secondBtn = false;
+            seventBtn = false;
+            eighthBtn = false;
+        }
+        else if (word == "AEREO" || word == "AEROPORTO")
+        {
+            seventBtn = true;
+
+            firstBtn = false;
+            thirdBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+            sixthBtn = false;
+            secondBtn = false;
+            eighthBtn = false;
+        }
+        else if (word == "AUTO" || word == "AUTOBUS")
+        {
+            eighthBtn = true;
+
+            firstBtn = false;
+            thirdBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+            sixthBtn = false;
+            seventBtn = false;
+            secondBtn = false;
+        }
+        #endregion
     }
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (word == "LEONE")
+        if (firstBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -149,7 +275,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (word == "PIOGGIA" || word == "FIOCCO" || word == "VIOLA")
+        if (secondBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -162,7 +288,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void ThirdBtn()
     {
-        if (word == "FUOCO" || word == "CUORE" || word == "RUOTA" || word == "CUOCO")
+        if (thirdBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -175,7 +301,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void FourthBtn()
     {
-        if (word == "PIEDE")
+        if (fourthBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -188,7 +314,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void FifthBtn()
     {
-        if (word == "PIATTO" || word == "PIANTA")
+        if (fifthBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -201,7 +327,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void SixthBtn()
     {
-        if (word == "ZAINO")
+        if (sixthBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -214,7 +340,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void SeventhBtn()
     {
-        if (word == "AEREO")
+        if (seventBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -227,7 +353,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void EighthBtn()
     {
-        if (word == "AUTO")
+        if (eighthBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
             Controller();
@@ -242,7 +368,7 @@ public class MissingVowelsController : MonoBehaviour
     #region Buttons Return, Exit, Next
     public void Return()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Exit()

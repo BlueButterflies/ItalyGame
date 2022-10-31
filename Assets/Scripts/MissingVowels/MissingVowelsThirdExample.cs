@@ -41,17 +41,17 @@ public class MissingVowelsThirdExample : MonoBehaviour
                                "FRAGOLE","APE", "ELFO", "ASINO", "ANATRA", "IPPOPOTAMO", "ARCOBALENO", "OROLOGIO","iglù".ToUpper() };
     private string word;
 
+    private bool firstBtn;
+    private bool secondBtn;
+    private bool thirdBtn;
+    private bool fourthBtn;
+    private bool fifthBtn;
     #endregion
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        
-    }
-
-    public void Update()
-    {
         Controller();
     }
 
@@ -61,6 +61,7 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
         Debug.Log(word);
 
+        #region Check words
         if (word == "ALA")
         {
             text.text = "_LA";
@@ -161,16 +162,65 @@ public class MissingVowelsThirdExample : MonoBehaviour
             text.text = "_VA";
             images.sprite = grape;
         }
+        #endregion
+
+        #region Check bool
+        if (word == "ALA" || word == "PALLA" || word == "APE" || word == "ANATRA" ||
+            word == "ARCOBALENO" || word == "ASINO")
+        {
+            firstBtn = true;
+
+            secondBtn =  false;
+            thirdBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+        }
+        else if (word == "ELFO" || word == "FRAGOLE" || word == "CANDELE")
+        {
+            secondBtn = true;
+
+            firstBtn = false;
+            thirdBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+        }
+        else if (word == "ISOLA" || word == "IMBUTO" || word == "IPPOPOTAMO" || word == "FUNGHI" || word == "FIORI" || word == "iglù".ToUpper())
+        {
+            thirdBtn = true;
+
+            secondBtn = false;
+            firstBtn = false;
+            fourthBtn = false;
+            fifthBtn = false;
+        }
+        else if (word == "GATTO" || word == "OMBRELLO" || word == "OROLOGGIO")
+        {
+            fourthBtn = true;
+
+            secondBtn = false;
+            firstBtn = false;
+            thirdBtn = false;
+            fifthBtn = false;
+        }
+        else if (word == "UNO" || word == "UVA")
+        {
+            fifthBtn = true;
+
+            secondBtn = false;
+            firstBtn = false;
+            fourthBtn = false;
+            thirdBtn = false;
+        }
+        #endregion
     }
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (word == "ALA" || word == "PALLA" || word == "APE" || word == "ANATRA" || 
-            word == "ARCOBALENO" || word == "ASINO" )
+        if (firstBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
-           // Controller();
+            Controller();
         }
         else
         {
@@ -180,10 +230,10 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (word == "ELFO" || word == "FRAGOLE" || word == "CANDELE")
+        if (secondBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
-            //Controller();
+            Controller();
         }
         else
         {
@@ -193,10 +243,10 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
     public void ThirdBtn()
     {
-        if (word == "ISOLA" || word == "IMBUTO" || word == "IPPOPOTAMO" || word == "FUNGHI" || word == "FIORI" || word == "iglù".ToUpper())
+        if (thirdBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
-           // Controller();
+            Controller();
         }
         else
         {
@@ -206,10 +256,10 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
     public void FourthBtn()
     {
-        if (word == "GATTO" || word == "OMBRELLO" || word == "OROLOGGIO")
+        if (fourthBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
-            //Controller();
+            Controller();
         }
         else
         {
@@ -219,10 +269,10 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
     public void FifthBtn()
     {
-        if (word == "UNO" || word == "UVA")
+        if (fifthBtn)
         {
             audioSource.PlayOneShot(audioClips[0]);
-           // Controller();
+            Controller();
         }
         else
         {
@@ -234,7 +284,7 @@ public class MissingVowelsThirdExample : MonoBehaviour
     #region Buttons Return, Exit
     public void Return()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Exit()
