@@ -16,6 +16,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
+    public void QuOrCuBtn()
+    {
+        SceneManager.LoadScene(7);
+    }
+
     public void Exit()
     {
         Application.Quit();
