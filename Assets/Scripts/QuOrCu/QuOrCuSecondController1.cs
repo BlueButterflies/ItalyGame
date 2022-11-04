@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class QuOrCuSecondController1 : MonoBehaviour
 {
-    #region
+    #region Variables
     private AudioSource audioSource;
     public AudioClip[] audioClip;
 

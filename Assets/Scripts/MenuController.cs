@@ -21,6 +21,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(7);
     }
 
+    public void GnaGneGniGnoGnu()
+    {
+        SceneManager.LoadScene(9);
+    }
+
     public void Exit()
     {
         Application.Quit();
