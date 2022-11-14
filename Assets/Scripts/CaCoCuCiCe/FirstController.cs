@@ -10,20 +10,7 @@ public class FirstController : MonoBehaviour
     public Text text;
 
     public Image images;
-    public Sprite house;
-    public Sprite horse;
-    public Sprite candles;
-    public Sprite goose;
-    public Sprite seaCalf;
-    public Sprite hat;
-    public Sprite chameleon;
-    public Sprite bend;
-    public Sprite socks;
-    public Sprite tableSpoon;
-    public Sprite rope;
-    public Sprite column;
-    public Sprite necklace;
-    public Sprite cube;
+    public Sprite[] sprites;
 
     public AudioClip[] audioClips;
     private AudioSource audioSource;
@@ -31,129 +18,101 @@ public class FirstController : MonoBehaviour
     private string[] words = { "CASA", "CAVALLO", "CANDELE", "OCA", "FOCA", "CAPPELLO", "CAMALEONTE", "CALZE",
                                "CORDA", "COLLANA", "COLONNA", "CURVA", "CUCCHIAIO", "CUBO"};
     private string word;
-
-    private bool CA;
-    private bool CO;
-    private bool CU;
     #endregion
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        Controller();
+        RandomWordsAndAssingImages();
     }
 
-    private void Controller()
+    #region Random words and assing texts and images
+    private void RandomWordsAndAssingImages()
     {
         word = words[Random.Range(0, words.Length)];
 
-        #region Check word
-        if (word == "CASA")
+        if (word == words[0])
         {
             text.text = "__SA";
-            images.sprite = house;
+            images.sprite = sprites[0];
         }
-        else if (word == "CAVALLO")
+        else if (word == words[1])
         {
             text.text = "__VALLO";
-            images.sprite = horse;
+            images.sprite = sprites[1];
         }
-        else if (word == "CANDELE")
+        else if (word == words[2])
         {
             text.text = "__NDELE";
-            images.sprite = candles;
+            images.sprite = sprites[2];
         }
-        else if (word == "OCA")
+        else if (word == words[3])
         {
             text.text = "O__";
-            images.sprite = goose;
+            images.sprite = sprites[3];
         }
-        else if (word == "FOCA")
+        else if (word == words[4])
         {
             text.text = "FO__";
-            images.sprite = seaCalf;
+            images.sprite = sprites[4];
         }
-        else if (word == "CAPPELLO")
+        else if (word == words[5])
         {
             text.text = "__PPELLO";
-            images.sprite = hat;
+            images.sprite = sprites[5];
         }
-        else if (word == "CAMALEONTE")
+        else if (word == words[6])
         {
             text.text = "__MALEONTE";
-            images.sprite = chameleon;
+            images.sprite = sprites[6];
         }
-        else if (word == "CALZE")
+        else if (word == words[7])
         {
             text.text = "__LZE";
-            images.sprite = socks;
+            images.sprite = sprites[7];
         }
-        else if (word == "CORDA")
+        else if (word == words[8])
         {
             text.text = "__RDA";
-            images.sprite = rope;
+            images.sprite = sprites[8];
         }
-        else if (word == "COLLANA")
+        else if (word == words[9])
         {
             text.text = "__LLANA";
-            images.sprite = necklace;
+            images.sprite = sprites[9];
         }
-        else if (word == "COLONNA")
+        else if (word == words[10])
         {
             text.text = "__LONNA";
-            images.sprite = column;
+            images.sprite = sprites[10];
         }
-        else if (word == "CURVA")
+        else if (word == words[11])
         {
             text.text = "__RVA";
-            images.sprite = bend;
+            images.sprite = sprites[11];
         }
-        else if (word == "CUCCHIAIO")
+        else if (word == words[12])
         {
             text.text = "__CCHIAIO";
-            images.sprite = tableSpoon;
+            images.sprite = sprites[12];
         }
-        else if (word == "CUBO")
+        else if (word == words[13])
         {
             text.text = "__BO";
-            images.sprite = cube;
+            images.sprite = sprites[13];
         }
-        #endregion
-
-        #region Check bool
-        if (word == "CAVALLO" || word == "CASA" || word == "CANDELE" || word == "CAPPELLO" 
-            || word == "CALZE" || word == "CAMALEONTE" || word == "OCA" || word == "FOCA")
-        {
-            CA = true;
-
-            CO = false;
-            CU = false;
-        }
-        else if (word == "CORDA" || word == "COLLANA" || word == "COLONNA")
-        {
-            CO = true;
-
-            CA = false;
-            CU = false;
-        }
-        else if (word == "CURVA" || word == "CUCCHIAIO" || word == "CUBO")
-        {
-            CU = true;
-
-            CO = false;
-            CA = false;
-        }
-        #endregion
     }
+    #endregion
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (CA)
+        if (word == words[0] || word == words[1] || word == words[2] || word == words[3]
+            || word == words[4] || word == words[5] || word == words[6] || word == words[7])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingImages();
 
         }
         else
@@ -164,10 +123,10 @@ public class FirstController : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (CO)
+        if (word == words[8] || word == words[9] || word == words[10])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingImages();
         }
         else
         {
@@ -177,10 +136,10 @@ public class FirstController : MonoBehaviour
 
     public void ThirdBtn()
     {
-        if (CU)
+        if (word == words[11] || word == words[12] || word == words[13])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingImages();
         }
         else
         {
@@ -195,14 +154,14 @@ public class FirstController : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void Next()
+    {
+        SceneManager.LoadScene(6);
+    }
+
     public void Exit()
     {
         Application.Quit();
-    }
-
-    public void Next()
-    {
-        SceneManager.LoadScene(5);
     }
     #endregion
 }

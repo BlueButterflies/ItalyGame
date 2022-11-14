@@ -13,17 +13,22 @@ public class MenuController : MonoBehaviour
 
     public void CaCoCuCeCiBtn()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 
     public void QuOrCuBtn()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(8);
     }
 
     public void GnaGneGniGnoGnu()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(10);
+    }
+
+    public void SceSciBtn()
+    {
+        SceneManager.LoadScene(13);
     }
 
     public void Exit()

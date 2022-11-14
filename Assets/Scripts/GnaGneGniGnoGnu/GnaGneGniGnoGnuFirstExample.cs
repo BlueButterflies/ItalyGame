@@ -244,7 +244,7 @@ public class GnaGneGniGnoGnuFirstExample : MonoBehaviour
 
     public void Next()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(11);
     }
 
     public void Exit()

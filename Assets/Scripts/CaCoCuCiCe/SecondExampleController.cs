@@ -10,197 +10,156 @@ public class SecondExampleController : MonoBehaviour
     public Text text;
 
     public Image images;
-    public Sprite bandai;
-    public Sprite brain;
-    public Sprite bascket;
-    public Sprite cucumber;
-    public Sprite hundred;
-    public Sprite smartphone;
-    public Sprite deer;
-    public Sprite walnut;
-    public Sprite sweet;
-    public Sprite cross;
-    public Sprite zip;
-    public Sprite five;
-    public Sprite root;
-    public Sprite swan;
-    public Sprite food;
-    public Sprite fleas;
-    public Sprite circus;
-    public Sprite cylinder;
-    public Sprite stork;
-    public Sprite boar;
-    public Sprite onion;
-    public Sprite bike;
-    public Sprite enclosure;
+    public Sprite[] sprites;
 
     public AudioClip[] audioClips;
     private AudioSource audioSource;
 
     private string[] words = { "CEROTTO", "CERVELLO", "CESTO", "CETRIOLO", "CENTO", "CELLULARE", "CERVO", "NOCE",
-                               "DOLCE", "CROCE", "RADICE", "CERNIERA", "CINQUE", "CIRCO","CIGNO","CIBO","PULCI",
-                               "CILINDRO", "CICOGNA","CINGHIALE","CIPOLLA","BICI","RECINTO"};
+                               "DOLCE", "CROCE", "RADICE", "CERNIERA", 
+                               "CINQUE", "CIRCO","CIGNO","CIBO","PULCI", "CILINDRO", "CICOGNA","CINGHIALE","CIPOLLA","BICI","RECINTO"};
     private string word;
-
-    private bool CE;
-    private bool CI;
     #endregion
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        Controller();
+        RandomWordsAndAssingImages();
     }
 
-    private void Controller()
+    #region Random words and assing texts and images
+    private void RandomWordsAndAssingImages()
     {
         word = words[Random.Range(0, words.Length)];
 
-        #region Check word
-        if (word == "CEROTTO")
+        if (word == words[0])
         {
             text.text = "__ROTTO";
-            images.sprite = bandai;
+            images.sprite = sprites[0];
         }
-        else if (word == "CERVELLO")
+        else if (word == words[1])
         {
             text.text = "__RVELLO";
-            images.sprite = brain;
+            images.sprite = sprites[1];
         }
-        else if (word == "CESTO")
+        else if (word == words[2])
         {
             text.text = "__STO";
-            images.sprite = bascket;
+            images.sprite = sprites[2];
         }
-        else if (word == "CETRIOLO")
+        else if (word == words[3])
         {
             text.text = "__TRIOLO";
-            images.sprite = cucumber;
+            images.sprite = sprites[3];
         }
-        else if (word == "CENTO")
+        else if (word == words[4])
         {
             text.text = "__NTO";
-            images.sprite = hundred;
+            images.sprite = sprites[4];
         }
-        else if (word == "CELLULARE")
+        else if (word == words[5])
         {
             text.text = "__LLULARE";
-            images.sprite = smartphone;
+            images.sprite = sprites[5];
         }
-        else if (word == "CERVO")
+        else if (word == words[6])
         {
             text.text = "__RVO";
-            images.sprite = deer;
+            images.sprite = sprites[6];
         }
-        else if (word == "NOCE")
+        else if (word == words[7])
         {
             text.text = "NO__";
-            images.sprite = walnut;
+            images.sprite = sprites[7];
         }
-        else if (word == "DOLCE")
+        else if (word == words[8])
         {
             text.text = "DOL__";
-            images.sprite = sweet;
+            images.sprite = sprites[8];
         }
-        else if (word == "CROCE")
+        else if (word == words[9])
         {
             text.text = "CRO__";
-            images.sprite = cross;
+            images.sprite = sprites[9];
         }
-        else if (word == "RADICE")
+        else if (word == words[10])
         {
             text.text = "RADI__";
-            images.sprite = root;
+            images.sprite = sprites[10];
         }
-        else if (word == "CERNIERA")
+        else if (word == words[11])
         {
             text.text = "__RNIERA";
-            images.sprite = zip;
+            images.sprite = sprites[11];
         }
-        else if (word == "CINQUE")
+        else if (word == words[12])
         {
             text.text = "__NQUE";
-            images.sprite = five;
+            images.sprite = sprites[12];
         }
-        else if (word == "CIRCO")
+        else if (word == words[13])
         {
             text.text = "__RCO";
-            images.sprite = circus;
+            images.sprite = sprites[13];
         }
-        else if (word == "CIGNO")
+        else if (word == words[14])
         {
             text.text = "__GNO";
-            images.sprite = swan;
+            images.sprite = sprites[14];
         }
-        else if (word == "CILINDRO")
-        {
-            text.text = "__LINDRO";
-            images.sprite = cylinder;
-        }
-        else if (word == "CIBO")
+        else if (word == words[15])
         {
             text.text = "__BO";
-            images.sprite = food;
+            images.sprite = sprites[15];
         }
-        else if (word == "PULCI")
+        else if (word == words[16])
         {
-            text.text = "__LCI";
-            images.sprite = fleas;
+            text.text = "PUL__";
+            images.sprite = sprites[16];
         }
-        else if (word == "CICOGNA")
+        else if (word == words[17])
+        {
+            text.text = "__LINDRO";
+            images.sprite = sprites[17];
+        }
+        else if (word == words[18])
         {
             text.text = "__COGNA";
-            images.sprite = stork;
+            images.sprite = sprites[18];
         }
-        else if (word == "CINGHIALE")
+        else if (word == words[19])
         {
             text.text = "__NGHIALE";
-            images.sprite = boar;
+            images.sprite = sprites[19];
         }
-        else if (word == "BICI")
-        {
-            text.text = "BI__";
-            images.sprite = bike;
-        }
-        else if (word == "RECINTO")
-        {
-            text.text = "RE__NTO";
-            images.sprite = enclosure;
-        }
-        else if (word == "CIPOLLA")
+        else if (word == words[20])
         {
             text.text = "__POLLA";
-            images.sprite = onion;
+            images.sprite = sprites[20];
         }
-        #endregion
-
-        #region Check bool
-        if (word == "CEROTTO" || word == "CERVELLO" || word == "CESTO" || word == "CETRIOLO"
-            || word == "CENTO" || word == "CELLULARE" || word == "CERVO" || word == "NOCE" || word == "DOLCE"
-             || word == "CROCE" || word == "RADICE" || word == "CERNIERA")
+        else if (word == words[21])
         {
-            CE = true;
-
-            CI = false;
+            text.text = "BI__";
+            images.sprite = sprites[21];
         }
-        else if (word == "CINQUE" || word == "CIRCO" || word == "CIGNO" || word == "CICOGNA" || word == "CILINDRO" 
-                 || word == "PULCI" || word == "CIBO" || word == "CINGHIALE" || word == "CIPOLLA" || word == "BICI" || word == "RECINTO")
+        else if (word == words[22])
         {
-            CI = true;
-
-            CE = false;
+            text.text = "RE__NTO";
+            images.sprite = sprites[22];
         }
-        #endregion
     }
+    #endregion
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (CE)
+        if (word == words[0] || word == words[1] || word == words[2] || word == words[3]
+            || word == words[4] || word == words[5] || word == words[6] || word == words[7] || word == words[8]
+             || word == words[9] || word == words[10] || word == words[11])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingImages();
 
         }
         else
@@ -211,10 +170,11 @@ public class SecondExampleController : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (CI)
+        if (word == words[12] || word == words[13] || word == words[14] || word == words[15] || word == words[16]
+                 || word == words[17] || word == words[18] || word == words[19] || word == words[20] || word == words[21] || word == words[22])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingImages();
         }
         else
         {
@@ -223,16 +183,22 @@ public class SecondExampleController : MonoBehaviour
     }
     #endregion
 
-    #region Buttons Return, Exit
+    #region Buttons Return, Next, Exit
     public void Return()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void Next()
+    {
+        SceneManager.LoadScene(7);
     }
 
     public void Exit()
     {
         Application.Quit();
     }
+
 
     #endregion
 }
