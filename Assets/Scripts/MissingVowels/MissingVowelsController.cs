@@ -12,259 +12,133 @@ public class MissingVowelsController : MonoBehaviour
     public Text text;
 
     public Image images;
-    public Sprite lion;
-    public Sprite fire;
-    public Sprite tire;
-    public Sprite heart;
-    public Sprite flake;
-    public Sprite dish;
-    public Sprite feet;
-    public Sprite violet;
-    public Sprite schoolBack;
-    public Sprite plant;
-    public Sprite rain;
-    public Sprite cook;
-    public Sprite honey;
-    public Sprite car;
-    public Sprite air;
-    public Sprite flower;
-    public Sprite airport;
-    public Sprite bus;
-    public Sprite museum;
+    public Sprite[] sprites;
 
     public AudioClip[] audioClips;
     private AudioSource audioSource;
-
-    private string[] words = { "LEONE", "FUOCO", "CUORE", "RUOTA", "FIOCCO", "PIATTO", "PIEDI", "VIOLA", "ZAINO",
-                               "PIANTA", "PIOGGIA", "CUOCO", "AEREO", "AEROPORTO", "AUTO", "FIORE", "MIELE", "AUTOBUS", "MUSEO"};
+                           
+    private string[] words = { "RUOTA","LEONE","FUOCO","ZAINO","CUORE","FIOCCO","PIATTO","VIOLA","PIEDI","PIOGGIA","PIANTA","CUOCO",
+                                "AEREO","AEROPORTO","AUTO","AUTOBUS","FIORE","MIELE","MUSEO"};
     private string word;
-
-    private bool firstBtn;
-    private bool secondBtn;
-    private bool thirdBtn;
-    private bool fourthBtn;
-    private bool fifthBtn;
-    private bool sixthBtn;
-    private bool seventBtn;
-    private bool eighthBtn;
-    #endregion
+    #endregion           
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        Controller();
+        RandomWordsAndAssingTxtImage();
     }
 
-    private void Controller()
+    #region Rnadom words and assing txt and image 
+    private void RandomWordsAndAssingTxtImage()
     {
         word = words[Random.Range(0, words.Length)];
 
-        #region Check words
-        if (word == "RUOTA")
+        if (word == words[0])
         {
             text.text = "R__TA";
-            images.sprite = tire;
+            images.sprite = sprites[0];
         }
-        else if (word == "LEONE")
+        else if (word == words[1])
         {
             text.text = "L__NE";
-            images.sprite = lion;
+            images.sprite = sprites[1];
         }
-        else if (word == "FUOCO")
+        else if (word == words[2])
         {
             text.text = "F__CO";
-            images.sprite = fire;
+            images.sprite = sprites[2];
         }
-        else if (word == "ZAINO")
+        else if (word == words[3])
         {
             text.text = "Z__NO";
-            images.sprite = schoolBack;
+            images.sprite = sprites[3];
         }
-        else if (word == "CUORE")
+        else if (word == words[4])
         {
             text.text = "C__RE";
-            images.sprite = heart;
+            images.sprite = sprites[4];
         }
-        else if (word == "FIOCCO")
+        else if (word == words[5])
         {
             text.text = "F__CCO";
-            images.sprite = flake;
+            images.sprite = sprites[5];
         }
-        else if (word == "PIATTO")
+        else if (word == words[6])
         {
             text.text = "P__TTO";
-            images.sprite = dish;
+            images.sprite = sprites[6];
         }
-        else if (word == "VIOLA")
+        else if (word == words[7])
         {
             text.text = "V__LA";
-            images.sprite = violet;
+            images.sprite = sprites[7];
         }
-        else if (word == "PIEDI")
+        else if (word == words[8])
         {
             text.text = "P__DI";
-            images.sprite = feet;
+            images.sprite = sprites[8];
         }
-        else if (word == "PIOGGA")
+        else if (word == words[9])
         {
             text.text = "P__GGA";
-            images.sprite = rain;
+            images.sprite = sprites[9];
         }
-        else if (word == "PIANTA")
+        else if (word == words[10])
         {
             text.text = "P__NTA";
-            images.sprite = plant;
+            images.sprite = sprites[10];
         }
-        else if (word == "CUOCO")
+        else if (word == words[11])
         {
             text.text = "C__CO";
-            images.sprite = cook;
+            images.sprite = sprites[11];
         }
-        else if (word == "AEREO")
+        else if (word == words[12])
         {
             text.text = "__REO";
-            images.sprite = air;
+            images.sprite = sprites[13];
         }
-        else if (word == "AEREOPORTO")
+        else if (word == words[13])
         {
             text.text = "__REOPORTO";
-            images.sprite = airport;
+            images.sprite = sprites[13];
         }
-        else if (word == "AUTO")
+        else if (word == words[14])
         {
             text.text = "__TO";
-            images.sprite = car;
+            images.sprite = sprites[14];
         }
-        else if (word == "AUTOBUS")
+        else if (word == words[15])
         {
             text.text = "__TOBUS";
-            images.sprite = bus;
+            images.sprite = sprites[15];
         }
-        else if (word == "FIORE")
+        else if (word == words[16])
         {
             text.text = "F__RE";
-            images.sprite = flower;
+            images.sprite = sprites[16];
         }
-        else if (word == "MIELE")
+        else if (word == words[17])
         {
             text.text = "M__LE";
-            images.sprite = honey;
+            images.sprite = sprites[17];
         }
-        else if (word == "MUSEO")
+        else if (word == words[18])
         {
             text.text = "MUS__";
-            images.sprite = museum;
+            images.sprite = sprites[18];
         }
-        #endregion
-
-        #region Check bool
-        if (word == "LEONE" || word == "MUSEO")
-        {
-            firstBtn = true;
-
-            secondBtn = false;
-            thirdBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-            sixthBtn = false;
-            seventBtn = false;
-            eighthBtn = false;
-        }
-        else if (word == "PIOGGIA" || word == "FIOCCO" || word == "VIOLA")
-        {
-            secondBtn = true;
-
-            firstBtn = false;
-            thirdBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-            sixthBtn = false;
-            seventBtn = false;
-            eighthBtn = false;
-        }
-        else if (word == "FUOCO" || word == "CUORE" || word == "RUOTA" || word == "CUOCO")
-        {
-            thirdBtn = true;
-
-            firstBtn = false;
-            secondBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-            sixthBtn = false;
-            seventBtn = false;
-            eighthBtn = false;
-        }
-        else if (word == "PIEDI" || word == "MIELE")
-        {
-            fourthBtn = true;
-
-            firstBtn = false;
-            thirdBtn = false;
-            secondBtn = false;
-            fifthBtn = false;
-            sixthBtn = false;
-            seventBtn = false;
-            eighthBtn = false;
-        }
-        else if (word == "PIATTO" || word == "PIANTA")
-        {
-            fifthBtn = true;
-
-            firstBtn = false;
-            thirdBtn = false;
-            fourthBtn = false;
-            secondBtn = false;
-            sixthBtn = false;
-            seventBtn = false;
-            eighthBtn = false;
-        }
-        else if (word == "ZAINO")
-        {
-            sixthBtn = true;
-
-            firstBtn = false;
-            thirdBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-            secondBtn = false;
-            seventBtn = false;
-            eighthBtn = false;
-        }
-        else if (word == "AEREO" || word == "AEROPORTO")
-        {
-            seventBtn = true;
-
-            firstBtn = false;
-            thirdBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-            sixthBtn = false;
-            secondBtn = false;
-            eighthBtn = false;
-        }
-        else if (word == "AUTO" || word == "AUTOBUS")
-        {
-            eighthBtn = true;
-
-            firstBtn = false;
-            thirdBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-            sixthBtn = false;
-            seventBtn = false;
-            secondBtn = false;
-        }
-        #endregion
     }
+    #endregion
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (firstBtn)
+        if (word == words[1] || word == words[18])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
 
         }
         else
@@ -275,10 +149,10 @@ public class MissingVowelsController : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (secondBtn)
+        if (word == words[9] || word == words[5] || word == words[7])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -288,10 +162,10 @@ public class MissingVowelsController : MonoBehaviour
 
     public void ThirdBtn()
     {
-        if (thirdBtn)
+        if (word == words[2] || word == words[4] || word == words[0] || word == words[11])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -301,10 +175,10 @@ public class MissingVowelsController : MonoBehaviour
 
     public void FourthBtn()
     {
-        if (fourthBtn)
+        if (word == words[8] || word == words[17])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -314,10 +188,10 @@ public class MissingVowelsController : MonoBehaviour
 
     public void FifthBtn()
     {
-        if (fifthBtn)
+        if (word == words[7] || word == words[10])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -327,10 +201,10 @@ public class MissingVowelsController : MonoBehaviour
 
     public void SixthBtn()
     {
-        if (sixthBtn)
+        if (word == words[3])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -340,10 +214,10 @@ public class MissingVowelsController : MonoBehaviour
 
     public void SeventhBtn()
     {
-        if (seventBtn)
+        if (word == words[12] || word == words[13])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -353,10 +227,10 @@ public class MissingVowelsController : MonoBehaviour
 
     public void EighthBtn()
     {
-        if (eighthBtn)
+        if (word == words[14] || word == words[15])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {

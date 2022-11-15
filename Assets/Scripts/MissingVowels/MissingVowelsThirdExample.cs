@@ -10,217 +10,139 @@ public class MissingVowelsThirdExample : MonoBehaviour
     public Text text;
 
     public Image images;
-    public Sprite goose;
-    public Sprite island;
-    public Sprite umbrella;
-    public Sprite boll;
-    public Sprite flowers;
-    public Sprite cat;
-    public Sprite wing;
-    public Sprite funnel;
-    public Sprite bee;
-    public Sprite candles;
-    public Sprite bird;
-    public Sprite strawberry;
-    public Sprite fungus;
-    public Sprite donkey;
-    public Sprite igloo;
-    public Sprite elf;
-    public Sprite hippopotamus;
-    public Sprite rainbow;
-    public Sprite duck;
-    public Sprite clock;
-    public Sprite grape;
-    public Sprite one;
-
+    public Sprite[] sprites;
 
     public AudioClip[] audioClips;
     private AudioSource audioSource;
 
-    private string[] words = { "ALA","OMBRELLO", "FIORI", "GATTO", "UVA", "UNO", "PALLA", "CANDELE", "FUNGHI", "IMBUTO", "ISOLA",
-                               "FRAGOLE","APE", "ELFO", "ASINO", "ANATRA", "IPPOPOTAMO", "ARCOBALENO", "OROLOGIO","iglù".ToUpper() };
+    private string[] words = { "ALA","OMBRELLO", "FIORI", "GATTO", "PALLA", "CANDELE", "FUNGHI", "IMBUTO", "ISOLA", "FRAGOLE", "APE",
+                               "ELFO", "ASINO", "ANATRA", "IPPOPOTAMO", "ARCOBALENO", "OROLOGIO", "iglù".ToUpper(),  "UNO", "UVA"};
     private string word;
-
-    private bool firstBtn;
-    private bool secondBtn;
-    private bool thirdBtn;
-    private bool fourthBtn;
-    private bool fifthBtn;
     #endregion
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        Controller();
+        RandomWordsAndAssingTxtImage();
     }
 
-    private void Controller()
+    #region Random words and assing txt and image
+    private void RandomWordsAndAssingTxtImage()
     {
         word = words[Random.Range(0, words.Length)];
 
-        Debug.Log(word);
-
-        #region Check words
-        if (word == "ALA")
+        if (word == words[0])
         {
             text.text = "_LA";
-            images.sprite = wing;
+            images.sprite = sprites[0];
         }
-        else if (word == "OMBRELLO")
+        else if (word == words[1])
         {
             text.text = "_MBRELLO";
-            images.sprite = umbrella;
+            images.sprite = sprites[1];
         }
-        else if (word == "FIORI")
+        else if (word == words[2])
         {
             text.text = "FIOR_";
-            images.sprite = flowers;
+            images.sprite = sprites[2];
         }
-        else if (word == "GATTO")
+        else if (word == words[3])
         {
             text.text = "GATT_";
-            images.sprite = cat;
+            images.sprite = sprites[3];
         }
-        else if (word == "PALLA")
+        else if (word == words[4])
         {
             text.text = "PALL_";
-            images.sprite = boll;
+            images.sprite = sprites[4];
         }
-        else if (word == "CANDELE")
+        else if (word == words[5])
         {
             text.text = "CANNDEL_";
-            images.sprite = candles;
+            images.sprite = sprites[5];
         }
-        else if (word == "FUNGHI")
+        else if (word == words[6])
         {
             text.text = "FUNGH_";
-            images.sprite = fungus;
+            images.sprite = sprites[6];
         }
-        else if (word == "IMBUTO")
+        else if (word == words[7])
         {
             text.text = "_MBUTO";
-            images.sprite = funnel;
+            images.sprite = sprites[7];
         }
-        else if (word == "ISOLA")
+        else if (word == words[8])
         {
             text.text = "_SOLA";
-            images.sprite = island;
+            images.sprite = sprites[8];
         }
-        else if (word == "FRAGOLE")
+        else if (word == words[9])
         {
             text.text = "FRAGOL_";
-            images.sprite = strawberry;
+            images.sprite = sprites[9];
         }
-        else if (word == "APE")
+        else if (word == words[10])
         {
             text.text = "_PE";
-            images.sprite = bee;
+            images.sprite = sprites[10];
         }
-        else if (word == "ELFO")
+        else if (word == words[11])
         {
             text.text = "_LFO";
-            images.sprite = elf;
+            images.sprite = sprites[11];
         }
-        else if (word == "ASINO")
+        else if (word == words[12])
         {
             text.text = "_SINO";
-            images.sprite = donkey;
+            images.sprite = sprites[12];
         }
-        else if (word == "ANATRA")
+        else if (word == words[13])
         {
             text.text = "_NATRA";
-            images.sprite = duck;
+            images.sprite = sprites[13];
         }
-        else if (word == "IPPOPOTAMO")
+        else if (word == words[14])
         {
             text.text = "_PPOPOTAMO";
-            images.sprite = hippopotamus;
+            images.sprite = sprites[14];
         }
-        else if (word == "ARCOBALENO")
+        else if (word == words[15])
         {
             text.text = "_RCOBALENO";
-            images.sprite = rainbow;
+            images.sprite = sprites[15];
         }
-        else if (word == "OROLOGGIO")
+        else if (word == words[16])
         {
             text.text = "_ROLOGGIO";
-            images.sprite = clock;
+            images.sprite = sprites[16];
         }
-        else if (word == "iglù".ToUpper())
+        else if (word == words[17])
         {
             text.text = "_glù".ToUpper();
-            images.sprite = igloo;
+            images.sprite = sprites[17];
         }
-        else if (word == "UNO")
+        else if (word == words[18])
         {
             text.text = "_NO";
-            images.sprite = one;
+            images.sprite = sprites[18];
         }
-        else if (word == "UVA")
+        else if (word == words[19])
         {
             text.text = "_VA";
-            images.sprite = grape;
+            images.sprite = sprites[19];
         }
-        #endregion
-
-        #region Check bool
-        if (word == "ALA" || word == "PALLA" || word == "APE" || word == "ANATRA" ||
-            word == "ARCOBALENO" || word == "ASINO")
-        {
-            firstBtn = true;
-
-            secondBtn =  false;
-            thirdBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-        }
-        else if (word == "ELFO" || word == "FRAGOLE" || word == "CANDELE")
-        {
-            secondBtn = true;
-
-            firstBtn = false;
-            thirdBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-        }
-        else if (word == "ISOLA" || word == "IMBUTO" || word == "IPPOPOTAMO" || word == "FUNGHI" || word == "FIORI" || word == "iglù".ToUpper())
-        {
-            thirdBtn = true;
-
-            secondBtn = false;
-            firstBtn = false;
-            fourthBtn = false;
-            fifthBtn = false;
-        }
-        else if (word == "GATTO" || word == "OMBRELLO" || word == "OROLOGGIO")
-        {
-            fourthBtn = true;
-
-            secondBtn = false;
-            firstBtn = false;
-            thirdBtn = false;
-            fifthBtn = false;
-        }
-        else if (word == "UNO" || word == "UVA")
-        {
-            fifthBtn = true;
-
-            secondBtn = false;
-            firstBtn = false;
-            fourthBtn = false;
-            thirdBtn = false;
-        }
-        #endregion
     }
+    #endregion
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (firstBtn)
+        if (word == words[0] || word == words[4] || word == words[10] || word == words[13] ||
+            word == words[15] || word == words[012])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -230,10 +152,10 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (secondBtn)
+        if (word == words[11] || word == words[9] || word == words[5])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -243,10 +165,10 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
     public void ThirdBtn()
     {
-        if (thirdBtn)
+        if (word == words[8] || word == words[7] || word == words[14] || word == words[6] || word == words[2] || word == words[17])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -256,10 +178,10 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
     public void FourthBtn()
     {
-        if (fourthBtn)
+        if (word == words[3] || word == words[1] || word == words[16])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {
@@ -269,10 +191,10 @@ public class MissingVowelsThirdExample : MonoBehaviour
 
     public void FifthBtn()
     {
-        if (fifthBtn)
+        if (word == words[18] || word == words[19])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {

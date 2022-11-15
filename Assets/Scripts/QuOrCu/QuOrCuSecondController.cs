@@ -13,176 +13,155 @@ public class QuOrCuSecondController1 : MonoBehaviour
     public Text firstBtntxt;
     public Text secondBtntxt;
 
-    private string[] words = { "CUOCO","SCUOLA", "CULLA", "CUFFIA", "CUSCINO", "CUCCIOLO","CUGINO","CUOCERE",
-                               "CUOIO","CUMINIOLO","CUCINARE", "CUCINA", "QUA", "QUERCE", "QUADRO","QUATTRO","SQUADRE", 
-                                "SQUALO", "ACQUARIO", "AQUILA","QUADRATO","ACQUA","SQUADRATO","PASQUA"};
-
+    private string[] words = { "CUOCO","SCUOLA", "CULLA", "CUFFIA", "CUSCINO", "CUCCIOLO","CUGINO","CUOCERE", "CUOIO","CUMINIOLO","CUCINARE", "CUCINA", //0-11
+                               "QUA", "QUERCE", "QUADRO","QUATTRO","ACQUARIO", "SQUALO", "SQUADRE", "AQUILA","QUADRATO","ACQUA","SQUADRATO","PASQUA"}; //12-23
     private string word;
-
-    private bool boolFirst;
-    private bool boolSecond;
     #endregion
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        Controller();
+        RandomWordsAndAssingButtonsTxt();
 
     }
 
-    private void Controller()
+    #region Random words and assing buttons text
+    private void RandomWordsAndAssingButtonsTxt()
     {
         word = words[Random.Range(0, words.Length)];
-
-        #region Check words
-        if (word == "CUOCO")
+        
+        if (word == words[0])
         {
             firstBtntxt.text = "CUOCO";
             secondBtntxt.text = "QUOCO";
         }
-        else if(word == "SCUOLA")
+        else if(word == words[1])
         {
             firstBtntxt.text = "SQUOLA";
             secondBtntxt.text = "SCUOLA";
         }
-        else if (word == "CULLA")
+        else if (word == words[2])
         {
             firstBtntxt.text = "CULLA";
             secondBtntxt.text = "QULLA";
         }
-        else if (word == "CUFFIA")
+        else if (word == words[3])
         {
             firstBtntxt.text = "QUFFIA";
             secondBtntxt.text = "CUFFIA";
         }
-        else if (word == "CUSCINO")
+        else if (word == words[4])
         {
             firstBtntxt.text = "CUSCINO";
             secondBtntxt.text = "QUSCINO";
         }
-        else if (word == "CUCCIOLO")
+        else if (word == words[5])
         {
             firstBtntxt.text = "QUCCIOLO";
             secondBtntxt.text = "CUCCIOLO";
         }
-        else if (word == "CUGINO")
+        else if (word == words[6])
         {
             firstBtntxt.text = "CUGINO";
             secondBtntxt.text = "QUGINO";
         }
-        else if (word == "CUOCERE")
+        else if (word == words[7])
         {
             firstBtntxt.text = "QUOCERE";
             secondBtntxt.text = "CUOCERE";
         }
-        else if (word == "CUOIO")
+        else if (word == words[8])
         {
             firstBtntxt.text = "CUOIO";
             secondBtntxt.text = "QUOIO";
         }
-        else if (word == "CUMINIOLO")
+        else if (word == words[9])
         {
             firstBtntxt.text = "QUMINIOLO";
             secondBtntxt.text = "CUMINIOLO";
         }
-        else if (word == "CUCINARE")
+        else if (word == words[10])
         {
             firstBtntxt.text = "CUCINARE";
             secondBtntxt.text = "QUCINARE";
         }
-        else if (word == "CUCINA")
+        else if (word == words[11])
         {
             firstBtntxt.text = "QUCINA";
             secondBtntxt.text = "CUCINA";
         }
-        else if (word == "QUA")
+        else if (word == words[12])
         {
             firstBtntxt.text = "QUA";
             secondBtntxt.text = "CUA";
         }
-        else if (word == "QUERCE")
+        else if (word == words[13])
         {
             firstBtntxt.text = "CUERCE";
             secondBtntxt.text = "QUERCE";
         }
-        else if (word == "QUADRO")
+        else if (word == words[14])
         {
             firstBtntxt.text = "QUADRO";
             secondBtntxt.text = "CUADRO";
         }
-        else if (word == "QUATTRO")
+        else if (word == words[15])
         {
             firstBtntxt.text = "CUATTRO";
             secondBtntxt.text = "QUATTRO";
         }
-        else if (word == "ACQUARIO")
+        else if (word == words[16])
         {
             firstBtntxt.text = "ACQUARIO";
             secondBtntxt.text = "ACCUARIO";
         }
-        else if (word == "SQUALO")
+        else if (word == words[17])
         {
             firstBtntxt.text = "SCUALO";
             secondBtntxt.text = "SQUALO";
         }
-        else if (word == "SQUADRE")
+        else if (word == words[18])
         {
             firstBtntxt.text = "SQUADRE";
             secondBtntxt.text = "SCUADRE";
         }
-        else if (word == "AQUILA")
+        else if (word == words[19])
         {
             firstBtntxt.text = "ACUILA";
             secondBtntxt.text = "AQUILA";
         }
-        else if (word == "QUADRATO")
+        else if (word == words[20])
         {
             firstBtntxt.text = "QUADRATO";
             secondBtntxt.text = "CUADRATO";
         }
-        else if (word == "ACQUA")
+        else if (word == words[21])
         {
             firstBtntxt.text = "ACCUA";
             secondBtntxt.text = "ACQUA";
         }
-        else if (word == "SQUADRATO")
+        else if (word == words[22])
         {
             firstBtntxt.text = "SQUADRATO";
             secondBtntxt.text = "SCUADRATO";
         }
-        else if (word == "PASQUA")
+        else if (word == words[23])
         {
             firstBtntxt.text = "PASCUA";
             secondBtntxt.text = "PASQUA";
         }
-        #endregion
-
-        #region Check bool
-        if (word == "CUOCO" || word == "CULLA" || word == "CUSCINO" || word == "CUGINO" || word == "CUOIO" || word == "CUCINARE"
-             || word == "QUA" || word == "QUADRO" || word == "ACQUARIO" || word == "SQUADRE" || word == "QUADRATO" || word == "SQUADRATO")
-        {
-            boolFirst = true;
-
-            boolSecond = false;
-        }
-        else if (word == "SCUOLA" || word == "CUFFIA" || word == "CUCCIOLO" || word == "CUOCERE" || word == "CUMINIOLO" || word == "CUCINA"
-             || word == "QUERCE" || word == "QUATTRO" || word == "SQUALO" || word == "AQUILA" || word == "ACQUA" || word == "PASQUA")
-        {
-            boolSecond = true;
-
-            boolFirst = false;
-        }
-        #endregion
     }
+    #endregion
 
     #region Buttons Answer
     public void FirstBtn()
-    {
-        if (boolFirst)
+    {if (word == words[0] || word == words[2] || word == words[4] || word == words[6] || word == words[8] || word == words[10]//0 2 4 6 8 10
+             || word == words[12] || word == words[14] || word == words[16] || word == words[18] || word == words[20] || word == words[22])//12 14 16 18 20 22
+        
         {
             audioSource.PlayOneShot(audioClip[0]);
-            Controller();
+            RandomWordsAndAssingButtonsTxt();
         }
         else
         {
@@ -192,10 +171,11 @@ public class QuOrCuSecondController1 : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (boolSecond)
+        if (word == words[1] || word == words[3] || word == words[5] || word == words[7] || word == words[9] || word == words[11]//1 3 5 7 9 11
+             || word == words[13] || word == words[15] || word == words[17] || word == words[19] || word == words[21] || word == words[23])//13 15 17 19 21 23
         {
             audioSource.PlayOneShot(audioClip[0]);
-            Controller();
+            RandomWordsAndAssingButtonsTxt();
         }
         else
         {
@@ -210,7 +190,12 @@ public class QuOrCuSecondController1 : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void Close()
+    public void Next()
+    {
+        SceneManager.LoadScene(10);
+    }
+
+    public void Exit()
     {
         Application.Quit();
     }

@@ -10,154 +10,119 @@ public class QuOrCuController : MonoBehaviour
     public Text text;
 
     public Image images;
-    public Sprite heard;
-    public Sprite school;
-    public Sprite cube;
-    public Sprite pillow;
-    public Sprite crib;
-    public Sprite cook;
-    public Sprite four;
-    public Sprite five;
-    public Sprite kite;
-    public Sprite eagle;
-    public Sprite shark;
-    public Sprite team;
-    public Sprite guardian;
-    public Sprite notebook;
-    public Sprite square;
-    public Sprite puppy;
+    public Sprite[] sprites;
 
     public AudioClip[] audioClips;
     private AudioSource audioSource;
 
-    private string[] words = { "CUORE", "SCUOLA", "CUBO", "CUSCINO", "CUOCO", "CULLA", "QUATTRO", "QUADRO",
-                               "AQUILONE", "SQUALO", "QUADERNO", "CINQUE", "SQUADRA","AQUILA","CUCCIOLO","CUSTODE"};
+    private string[] words = { "CUORE", "SCUOLA", "CUBO", "CUSCINO", "CUOCO", "CULLA", "CUCCIOLO","CUSTODE",
+                               "QUATTRO", "QUADRO","AQUILONE", "SQUALO", "QUADERNO", "CINQUE", "SQUADRA","AQUILA"};                           
     private string word;
-
-    private bool QU;
-    private bool CU;
     #endregion
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        Controller();
+        RandomWordsAndAssingTxtImage();
     }
 
-    private void Controller()
+    #region Random words and assing txt and image
+    private void RandomWordsAndAssingTxtImage()
     {
         word = words[Random.Range(0, words.Length)];
 
-        #region Check word
-        if (word == "CUORE")
+        if (word == words[0])
         {
             text.text = "__ORE";
-            images.sprite = heard;
+            images.sprite = sprites[0];
         }
-        else if (word == "SCUOLA")
+        else if (word == words[1])
         {
             text.text = "S__OLA";
-            images.sprite = school;
+            images.sprite = sprites[1];
         }
-        else if (word == "CUBO")
+        else if (word == words[2])
         {
             text.text = "__BO";
-            images.sprite = cube;
+            images.sprite = sprites[2];
         }
-        else if (word == "CUSCINO")
+        else if (word == words[3])
         {
             text.text = "__SCINO";
-            images.sprite = pillow;
+            images.sprite = sprites[3];
         }
-        else if (word == "CUOCO")
+        else if (word == words[4])
         {
             text.text = "__OCO";
-            images.sprite = cook;
+            images.sprite = sprites[4];
         }
-        else if (word == "CULLA")
+        else if (word == words[5])
         {
             text.text = "__LLA";
-            images.sprite = crib;
+            images.sprite = sprites[5];
         }
-        else if (word == "QUATTRO")
-        {
-            text.text = "__ATTRO";
-            images.sprite = four;
-        }
-        else if (word == "QUADRO")
-        {
-            text.text = "__ADRO";
-            images.sprite = square;
-        }
-        else if (word == "AQUILONE")
-        {
-            text.text = "A__ILONE";
-            images.sprite = kite;
-        }
-        else if (word == "SQUALO")
-        {
-            text.text = "S__ALO";
-            images.sprite = shark;
-        }
-        else if (word == "QUADERNO")
-        {
-            text.text = "__ADERNO";
-            images.sprite = notebook;
-        }
-        else if (word == "CINQUE")
-        {
-            text.text = "CIN__E";
-            images.sprite = five;
-        }
-        else if (word == "SQUADRA")
-        {
-            text.text = "S__ADRA";
-            images.sprite = team;
-        }
-        else if (word == "AQUILA")
-        {
-            text.text = "A__ILA";
-            images.sprite = eagle;
-        }
-        else if (word == "CUCCIOLO")
+        else if (word == words[6])
         {
             text.text = "__CCIOLO";
-            images.sprite = puppy;
+            images.sprite = sprites[6];
         }
-        else if (word == "CUSTODE")
+        else if (word == words[7])
         {
             text.text = "__STODE";
-            images.sprite = guardian;
+            images.sprite = sprites[7];
         }
-        
-        #endregion
-
-        #region Check bool
-        if (word == "CUORE" || word == "SCUOLA" || word == "CUBO" || word == "CUSCINO"
-            || word == "CUOCO" || word == "CULLA" || word == "CUCCIOLO" || word == "CUSTODE")
+        else if (word == words[8])
         {
-            QU = false;
-
-            CU = true;
+            text.text = "__ATTRO";
+            images.sprite = sprites[8];
         }
-        else if (word == "QUATTRO" || word == "QUADRO" || word == "CINQUE" || word == "QUADERNO" || word == "SQUALO"
-                 || word == "AQUILONE" || word == "AQUILA")
+        else if (word == words[9])
         {
-            CU = false;
-
-            QU = true;
+            text.text = "__ADRO";
+            images.sprite = sprites[9];
         }
-        #endregion
+        else if (word == words[10])
+        {
+            text.text = "A__ILONE";
+            images.sprite = sprites[10];
+        }
+        else if (word == words[11])
+        {
+            text.text = "S__ALO";
+            images.sprite = sprites[11];
+        }
+        else if (word == words[12])
+        {
+            text.text = "__ADERNO";
+            images.sprite = sprites[12];
+        }
+        else if (word == words[13])
+        {
+            text.text = "CIN__E";
+            images.sprite = sprites[13];
+        }
+        else if (word == words[14])
+        {
+            text.text = "S__ADRA";
+            images.sprite = sprites[14];
+        }
+        else if (word == words[15])
+        {
+            text.text = "A__ILA";
+            images.sprite = sprites[15];
+        }
     }
+    #endregion
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (QU)
+        if (word == words[8] || word == words[9] || word == words[10] || word == words[11] || word == words[12]
+                 || word == words[13] || word == words[14] || word == words[15])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
 
         }
         else
@@ -168,10 +133,11 @@ public class QuOrCuController : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (CU)
+        if (word == words[0] || word == words[1] || word == words[2] || word == words[3]
+            || word == words[4] || word == words[5] || word == words[6] || word == words[7])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingTxtImage();
         }
         else
         {

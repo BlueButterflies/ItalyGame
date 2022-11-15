@@ -200,7 +200,7 @@ public class SceSciScheSchiSecondExample : MonoBehaviour
 
     public void Next()
     {
-        SceneManager.LoadScene(14);
+        SceneManager.LoadScene(16);
     }
 
     public void Exit()

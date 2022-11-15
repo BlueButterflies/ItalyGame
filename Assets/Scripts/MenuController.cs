@@ -23,12 +23,12 @@ public class MenuController : MonoBehaviour
 
     public void GnaGneGniGnoGnu()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(11);
     }
 
     public void SceSciBtn()
     {
-        SceneManager.LoadScene(13);
+        SceneManager.LoadScene(14);
     }
 
     public void Exit()

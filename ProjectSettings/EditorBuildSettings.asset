@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/QuOrCu/QuOrCuSecondExample.unity
     guid: 5659ccca59e8e114ab8dc6caf3d4f203
   - enabled: 1
+    path: Assets/Scenes/QuOrCu/QuOrCuThirdExample.unity
+    guid: b06a3ef1a51e5b7478198f2ed04756f0
+  - enabled: 1
     path: Assets/Scenes/GnaGneGniGnoGnu/GnaGniGneGnoGnu.unity
     guid: 6de32bb2fef7462498f95e920eb86248
   - enabled: 1

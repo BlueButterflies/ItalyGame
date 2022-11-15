@@ -156,7 +156,7 @@ public class GnaGneGniGnoGnuThirdExample : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void CloseGame()
+    public void Exit()
     {
         Application.Quit();
     }

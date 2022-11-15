@@ -480,28 +480,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1881332811}
   images: {fileID: 861406549}
-  goose: {fileID: 21300000, guid: 1835971f0a7dc12448c6f1c51c462947, type: 3}
-  island: {fileID: 21300000, guid: 9fb0dc1aeb941b3438ecbd4ad3e8e10d, type: 3}
-  umbrella: {fileID: 21300000, guid: d3a6fa7c6466fe74a98a9794499893b3, type: 3}
-  boll: {fileID: 21300000, guid: 65399e4b0041b5242ac419b0fd924ba0, type: 3}
-  flowers: {fileID: 21300000, guid: a5107b72455699c44b4cb5c89c1d7793, type: 3}
-  cat: {fileID: 21300000, guid: 80b72430af33e8b448ec63de1c0ce5fc, type: 3}
-  wing: {fileID: 21300000, guid: a80e0ba8a65a2f445a0b11224b8f0c87, type: 3}
-  funnel: {fileID: 21300000, guid: a41c00aecb636e843a9327e2c51825e0, type: 3}
-  bee: {fileID: 21300000, guid: c79daf055dfd0084a922a93e3a07352f, type: 3}
-  candles: {fileID: 21300000, guid: b13880b417d8a2a458ebe8cee6a27bd8, type: 3}
-  bird: {fileID: 21300000, guid: 75e7430f22e6ce44f8e06bd1a8786d7c, type: 3}
-  strawberry: {fileID: 21300000, guid: 8721599f91906dd47b5966ec8eb4b5ad, type: 3}
-  fungus: {fileID: 21300000, guid: d44f70337befb6d4aad4a4e21fe2c8b3, type: 3}
-  donkey: {fileID: 21300000, guid: 7fdf25dd495bdd441add171a609c0d84, type: 3}
-  igloo: {fileID: 21300000, guid: 5b528e189d7e6964684411d5f20578f6, type: 3}
-  elf: {fileID: 21300000, guid: 6bcd152ccd409cc43bbbf1b77b233f7d, type: 3}
-  hippopotamus: {fileID: 21300000, guid: 76fcce2ebd5566744a4ddf6911a349fa, type: 3}
-  rainbow: {fileID: 21300000, guid: da6017026a79d1245a84e40388c410b3, type: 3}
-  duck: {fileID: 21300000, guid: 7a5a5c1561778e34985ed4caac637541, type: 3}
-  clock: {fileID: 21300000, guid: aadba02e0a39e2e4d80368676ccbcf0c, type: 3}
-  grape: {fileID: 21300000, guid: baa887976b7eb4c44ab49f74a0af5f52, type: 3}
-  one: {fileID: 21300000, guid: 0f21c162255440e4ba350ea0d99bb6f7, type: 3}
+  sprites:
+  - {fileID: 21300000, guid: a80e0ba8a65a2f445a0b11224b8f0c87, type: 3}
+  - {fileID: 21300000, guid: d3a6fa7c6466fe74a98a9794499893b3, type: 3}
+  - {fileID: 21300000, guid: a5107b72455699c44b4cb5c89c1d7793, type: 3}
+  - {fileID: 21300000, guid: 80b72430af33e8b448ec63de1c0ce5fc, type: 3}
+  - {fileID: 21300000, guid: 65399e4b0041b5242ac419b0fd924ba0, type: 3}
+  - {fileID: 21300000, guid: b13880b417d8a2a458ebe8cee6a27bd8, type: 3}
+  - {fileID: 21300000, guid: d44f70337befb6d4aad4a4e21fe2c8b3, type: 3}
+  - {fileID: 21300000, guid: a41c00aecb636e843a9327e2c51825e0, type: 3}
+  - {fileID: 21300000, guid: 9fb0dc1aeb941b3438ecbd4ad3e8e10d, type: 3}
+  - {fileID: 21300000, guid: 8721599f91906dd47b5966ec8eb4b5ad, type: 3}
+  - {fileID: 21300000, guid: c79daf055dfd0084a922a93e3a07352f, type: 3}
+  - {fileID: 21300000, guid: 6bcd152ccd409cc43bbbf1b77b233f7d, type: 3}
+  - {fileID: 21300000, guid: 7fdf25dd495bdd441add171a609c0d84, type: 3}
+  - {fileID: 21300000, guid: 7a5a5c1561778e34985ed4caac637541, type: 3}
+  - {fileID: 21300000, guid: 76fcce2ebd5566744a4ddf6911a349fa, type: 3}
+  - {fileID: 21300000, guid: da6017026a79d1245a84e40388c410b3, type: 3}
+  - {fileID: 21300000, guid: aadba02e0a39e2e4d80368676ccbcf0c, type: 3}
+  - {fileID: 21300000, guid: 5b528e189d7e6964684411d5f20578f6, type: 3}
+  - {fileID: 21300000, guid: 0f21c162255440e4ba350ea0d99bb6f7, type: 3}
+  - {fileID: 21300000, guid: baa887976b7eb4c44ab49f74a0af5f52, type: 3}
   audioClips:
   - {fileID: 8300000, guid: a3c5e0044c438e742bbb6acea65e8845, type: 3}
   - {fileID: 8300000, guid: 03e71a78977166543968a66e95e904ec, type: 3}

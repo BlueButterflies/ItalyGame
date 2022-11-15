@@ -18,164 +18,114 @@ public class GnaGneGniGnoGnuFirstExample : MonoBehaviour
     public Text fourthTxt;
     public Text fifthTxt;
 
-    private string[] words = { "GNOMO", "SPUGNA", "CIGNO", "GNIOCCHI", "BIGNE", "PUGNO", "RAGNO", "AGNELLO", "BAGNO", "VIGNA",
-                               "PRUGNA","MONTAGNA","LEGNO","LASAGNA","PUGNALE","MUGNAIO","PIGNA","PAGNOTTA","PIAGNUCOLONE","OGNUNO"};
+    private string[] words = { "GNOMO", "SPUGNA", "CIGNO", "GNIOCCHI", "BIGNE", "PUGNO", "RAGNO", "AGNELLO", "BAGNO", "VIGNA",//0-9
+                               "PRUGNA","MONTAGNA","LEGNO","LASAGNA","PUGNALE","MUGNAIO","PIGNA","PAGNOTTA","PIAGNUCOLONE","OGNUNO"};//10-19
     private string word;
-
-    private bool firstBool;
-    private bool secondBool;
-    private bool thirdBool;
-    private bool fourthBool;
-    private bool fifthBool;
     #endregion
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        Controller();
+        RandomWordsAndAssingText();
     }
 
-    private void Controller()
+    #region Random words and assing text
+    private void RandomWordsAndAssingText()
     {
         word = words[Random.Range(0, words.Length)];
 
-        #region Check words
-        if (word == "GNOMO")
+        if (word == words[0])
         {
             text.text = "___MO";
         }
-        else if (word == "SPUGNA")
+        else if (word == words[1])
         {
             text.text = "SPU___";
         }
-        else if (word == "CIGNO")
+        else if (word == words[2])
         {
             text.text = "CI___";
         }
-        else if (word == "GNIOCCHI")
+        else if (word == words[3])
         {
             text.text = "___OCCHI";
         }
-        else if (word == "BIGNE")
+        else if (word == words[4])
         {
             text.text = "BI___";
         }
-        else if (word == "PUGNO")
+        else if (word == words[5])
         {
             text.text = "PU___";
         }
-        else if (word == "RAGNO")
+        else if (word == words[6])
         {
             text.text = "RA___";
         }
-        else if (word == "AGNELLO")
+        else if (word == words[7])
         {
             text.text = "A___LLO";
         }
-        else if (word == "BAGNO")
+        else if (word == words[8])
         {
             text.text = "BA___";
         }
-        else if (word == "VIGNA")
+        else if (word == words[9])
         {
             text.text = "VI___";
         }
-        else if (word == "PRUGNA")
+        else if (word == words[10])
         {
             text.text = "PRU___";
         }
-        else if (word == "MONTAGNA")
+        else if (word == words[11])
         {
             text.text = "MONTA___";
         }
-        else if (word == "LEGNO")
+        else if (word == words[12])
         {
             text.text = "LE___";
         }
-        else if (word == "LASAGNA")
+        else if (word == words[13])
         {
             text.text = "LASA___";
         }
-        else if (word == "PUGNALE")
+        else if (word == words[14])
         {
             text.text = "PU___LE";
         }
-        else if (word == "MUGNAIO")
+        else if (word == words[15])
         {
             text.text = "MU___IO";
         }
-        else if (word == "PIGNA")
+        else if (word == words[16])
         {
             text.text = "PI___";
         }
-        else if (word == "PAGNOTTA")
+        else if (word == words[17])
         {
             text.text = "PA___TTA";
         }
-        else if (word == "PIAGNUCOLONE")
+        else if (word == words[18])
         {
             text.text = "PIA___COLONE";
         }
-        else if (word == "OGNUNO")
+        else if (word == words[19])
         {
             text.text = "O___NO";
         }
-        #endregion
-
-        #region Check bool
-        if (word == "SPUGNA" || word == "VIGNA" || word == "PRUGNA" || word == "MONTAGNA"
-             || word == "LASAGNA" || word == "PUGNALE" || word == "MUGNAIO" || word == "PIGNA")
-        {
-            firstBool = true;
-            secondBool = false;
-            thirdBool = false;
-            fourthBool = false;
-            fifthBool = false;
-        }
-        else if (word == "BIGNE" || word == "AGNELLO")
-        {
-            firstBool = false;
-            secondBool = true;
-            thirdBool = false;
-            fourthBool = false;
-            fifthBool = false;
-        }
-        else if (word == "GNIOCCHI")
-        {
-            firstBool = false;
-            secondBool = false;
-            thirdBool = true;
-            fourthBool = false;
-            fifthBool = false;
-        }
-        else if (word == "GNOMO" || word == "CIGNO" || word == "PUGNO" || word == "RAGNO" || word == "BAGNO"
-                       || word == "LEGNO" || word == "PAGNOTTA")
-        {
-            firstBool = false;
-            secondBool = false;
-            thirdBool = false;
-            fourthBool = true;
-            fifthBool = false;
-        }
-        else if (word == "OGNUNO" || word == "PIAGNUCOLONE")
-        {
-            firstBool = false;
-            secondBool = false;
-            thirdBool = false;
-            fourthBool = false;
-            fifthBool = true;
-        }
-        #endregion
     }
+    #endregion
 
     #region Buttons Answer
     public void FirstBtn()
     {
-        if (firstBool)
+        if (word == words[1] || word == words[9] || word == words[10] || word == words[11]
+             || word == words[13] || word == words[14] || word == words[15] || word == words[16])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingText();
         }
         else
         {
@@ -185,10 +135,10 @@ public class GnaGneGniGnoGnuFirstExample : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (secondBool)
+        if (word == words[4] || word == words[7])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingText();
         }
         else
         {
@@ -198,10 +148,10 @@ public class GnaGneGniGnoGnuFirstExample : MonoBehaviour
 
     public void ThirdBtn()
     {
-        if (thirdBool)
+        if (word == words[3])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingText();
         }
         else
         {
@@ -211,10 +161,11 @@ public class GnaGneGniGnoGnuFirstExample : MonoBehaviour
 
     public void FourthBtn()
     {
-        if (fourthBool)
+        if (word == words[0] || word == words[2] || word == words[5] || word == words[6] || word == words[8]
+                       || word == words[12] || word == words[17])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingText();
         }
         else
         {
@@ -224,10 +175,10 @@ public class GnaGneGniGnoGnuFirstExample : MonoBehaviour
 
     public void FifthBtn()
     {
-        if (fifthBool)
+        if (word == words[18] || word == words[19])
         {
             audioSource.PlayOneShot(audioClips[0]);
-            Controller();
+            RandomWordsAndAssingText();
         }
         else
         {
@@ -244,7 +195,7 @@ public class GnaGneGniGnoGnuFirstExample : MonoBehaviour
 
     public void Next()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene(12);
     }
 
     public void Exit()

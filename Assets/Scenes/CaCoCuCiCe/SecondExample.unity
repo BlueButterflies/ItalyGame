@@ -1365,29 +1365,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1874006115}
   images: {fileID: 507196746}
-  bandai: {fileID: 21300000, guid: ce08188eb8c08fc4cafd70f90e78fee7, type: 3}
-  brain: {fileID: 21300000, guid: 900458ebc520ec04485481ccf036268b, type: 3}
-  bascket: {fileID: 21300000, guid: 29b31cf4b44fe7d4185b185a7918e5d4, type: 3}
-  cucumber: {fileID: 21300000, guid: 20ab26335ef22c64197391a61cd48eca, type: 3}
-  hundred: {fileID: 21300000, guid: e67a8b8c8cbaf1b4aa211c8746013ea3, type: 3}
-  smartphone: {fileID: 21300000, guid: 226a88eebbe0a5e4d80bea10cedaca3e, type: 3}
-  deer: {fileID: 21300000, guid: b778b93ea2593b146b7d6107dd1d9e2b, type: 3}
-  walnut: {fileID: 21300000, guid: f210a4b9b66b1334998702f80d9cc982, type: 3}
-  sweet: {fileID: 21300000, guid: 9be081a11226c2b46b4950d0685f032e, type: 3}
-  cross: {fileID: 21300000, guid: b0ea1ba96a96cd64cb8f782279170410, type: 3}
-  zip: {fileID: 21300000, guid: a6ff84739f88da94fabd29d968f25138, type: 3}
-  five: {fileID: 21300000, guid: 552135135ca4545449bcda1fea9c6d90, type: 3}
-  root: {fileID: 21300000, guid: 4d5da089af62ba64c88fd50d1aeea702, type: 3}
-  swan: {fileID: 21300000, guid: 03bd334750cf1c44e9f489c063944b9b, type: 3}
-  food: {fileID: 21300000, guid: 45bf5beea11799e44af265c3df6f7bbb, type: 3}
-  fleas: {fileID: 21300000, guid: a1e2a6a81b378464387d22baac92a0ad, type: 3}
-  circus: {fileID: 21300000, guid: 6cb6fbe4faf2def4e82d310cb56b6a88, type: 3}
-  cylinder: {fileID: 21300000, guid: ec7f63d3a0244c741a9b32aaa145920f, type: 3}
-  stork: {fileID: 21300000, guid: 628d0c1899dede84f9758ab25214abe4, type: 3}
-  boar: {fileID: 21300000, guid: 97d26b27de43e444a8d45c8898647c64, type: 3}
-  onion: {fileID: 21300000, guid: e2b96a902d2aaf24a84eca2d3029d5a8, type: 3}
-  bike: {fileID: 21300000, guid: ff0f29080b932c34783e65e1019b1f02, type: 3}
-  enclosure: {fileID: 21300000, guid: ce692a7dc2e628b43a89b0e2edbafbd3, type: 3}
+  sprites:
+  - {fileID: 21300000, guid: ce08188eb8c08fc4cafd70f90e78fee7, type: 3}
+  - {fileID: 21300000, guid: 900458ebc520ec04485481ccf036268b, type: 3}
+  - {fileID: 21300000, guid: 29b31cf4b44fe7d4185b185a7918e5d4, type: 3}
+  - {fileID: 21300000, guid: 20ab26335ef22c64197391a61cd48eca, type: 3}
+  - {fileID: 21300000, guid: e67a8b8c8cbaf1b4aa211c8746013ea3, type: 3}
+  - {fileID: 21300000, guid: 226a88eebbe0a5e4d80bea10cedaca3e, type: 3}
+  - {fileID: 21300000, guid: b778b93ea2593b146b7d6107dd1d9e2b, type: 3}
+  - {fileID: 21300000, guid: f210a4b9b66b1334998702f80d9cc982, type: 3}
+  - {fileID: 21300000, guid: 9be081a11226c2b46b4950d0685f032e, type: 3}
+  - {fileID: 21300000, guid: b0ea1ba96a96cd64cb8f782279170410, type: 3}
+  - {fileID: 21300000, guid: 4d5da089af62ba64c88fd50d1aeea702, type: 3}
+  - {fileID: 21300000, guid: a6ff84739f88da94fabd29d968f25138, type: 3}
+  - {fileID: 21300000, guid: 552135135ca4545449bcda1fea9c6d90, type: 3}
+  - {fileID: 21300000, guid: 6cb6fbe4faf2def4e82d310cb56b6a88, type: 3}
+  - {fileID: 21300000, guid: 03bd334750cf1c44e9f489c063944b9b, type: 3}
+  - {fileID: 21300000, guid: 45bf5beea11799e44af265c3df6f7bbb, type: 3}
+  - {fileID: 21300000, guid: a1e2a6a81b378464387d22baac92a0ad, type: 3}
+  - {fileID: 21300000, guid: ec7f63d3a0244c741a9b32aaa145920f, type: 3}
+  - {fileID: 21300000, guid: 628d0c1899dede84f9758ab25214abe4, type: 3}
+  - {fileID: 21300000, guid: 97d26b27de43e444a8d45c8898647c64, type: 3}
+  - {fileID: 21300000, guid: e2b96a902d2aaf24a84eca2d3029d5a8, type: 3}
+  - {fileID: 21300000, guid: ff0f29080b932c34783e65e1019b1f02, type: 3}
+  - {fileID: 21300000, guid: ce692a7dc2e628b43a89b0e2edbafbd3, type: 3}
   audioClips:
   - {fileID: 8300000, guid: a3c5e0044c438e742bbb6acea65e8845, type: 3}
   - {fileID: 8300000, guid: 03e71a78977166543968a66e95e904ec, type: 3}

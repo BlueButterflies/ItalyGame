@@ -642,7 +642,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: ad0560ab9e0e42c43b95b8ddf7f7a57d, type: 3}
     m_FontSize: 90
-    m_FontStyle: 0
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 9
     m_MaxSize: 90
@@ -652,7 +652,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: FAI CLICK SULLA RISPOSTA GIUSTA
+  m_Text: SCEGLI IL GIUSTO!
 --- !u!222 &1188248159
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -918,7 +918,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1190011777}
         m_TargetAssemblyTypeName: SceSciScheSchiFirstController, Assembly-CSharp
-        m_MethodName: CloseGame
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -140,10 +140,10 @@ public class SceSciScheSchiFirstController : MonoBehaviour
 
     public void Next()
     {
-        SceneManager.LoadScene(13);
+        SceneManager.LoadScene(15);
     }
 
-    public void CloseGame()
+    public void Exit()
     {
         Application.Quit();
     }

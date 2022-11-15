@@ -293,23 +293,24 @@ MonoBehaviour:
   btnFourth: {fileID: 1696589706}
   btnFive: {fileID: 656269766}
   images: {fileID: 71811850}
-  dog: {fileID: 21300000, guid: abaffd93d35ce2a42a6e59e8641d16bc, type: 3}
-  apple: {fileID: 21300000, guid: 8a0a26ba14b498840bed58012548ded7, type: 3}
-  grape: {fileID: 21300000, guid: baa887976b7eb4c44ab49f74a0af5f52, type: 3}
-  moon: {fileID: 21300000, guid: a658900c0f1ab79438587a67f749faad, type: 3}
-  sun: {fileID: 21300000, guid: 6c06ec018be20f240b9b0e0a925aadbd, type: 3}
-  pipe: {fileID: 21300000, guid: ffee8d3753d1e46479832d7e88c68c03, type: 3}
-  nest: {fileID: 21300000, guid: 3e973cbdfa5481344afcaf3dc8c76744, type: 3}
-  branch: {fileID: 21300000, guid: 3c77df5ed9953eb44b3d833cb7b207b2, type: 3}
-  cube: {fileID: 21300000, guid: e453e1297d2fa2445b6cf456fb84f80c, type: 3}
-  book: {fileID: 21300000, guid: ca10a6c75e9e56e4684bea5a55c93b6d, type: 3}
-  hand: {fileID: 21300000, guid: 4ba7d3d310443c44f8ee134610f3f91f, type: 3}
-  motorcycle: {fileID: 21300000, guid: 25ef0536726e0764189df2626f759b6c, type: 3}
-  fly: {fileID: 21300000, guid: 04d9f075732d54340a6103dad57c58a7, type: 3}
-  house: {fileID: 21300000, guid: 99a6848818149014599799ac7a001797, type: 3}
-  seaCalf: {fileID: 21300000, guid: 47a3ace3dabc74b4090932b91f85bd6a, type: 3}
-  goose: {fileID: 21300000, guid: 1835971f0a7dc12448c6f1c51c462947, type: 3}
-  city: {fileID: 21300000, guid: 5c41f181a19cbed4a89d27435ce5c89a, type: 3}
+  sprites:
+  - {fileID: 21300000, guid: abaffd93d35ce2a42a6e59e8641d16bc, type: 3}
+  - {fileID: 21300000, guid: 8a0a26ba14b498840bed58012548ded7, type: 3}
+  - {fileID: 21300000, guid: baa887976b7eb4c44ab49f74a0af5f52, type: 3}
+  - {fileID: 21300000, guid: a658900c0f1ab79438587a67f749faad, type: 3}
+  - {fileID: 21300000, guid: 6c06ec018be20f240b9b0e0a925aadbd, type: 3}
+  - {fileID: 21300000, guid: ffee8d3753d1e46479832d7e88c68c03, type: 3}
+  - {fileID: 21300000, guid: 3e973cbdfa5481344afcaf3dc8c76744, type: 3}
+  - {fileID: 21300000, guid: 3c77df5ed9953eb44b3d833cb7b207b2, type: 3}
+  - {fileID: 21300000, guid: e453e1297d2fa2445b6cf456fb84f80c, type: 3}
+  - {fileID: 21300000, guid: ca10a6c75e9e56e4684bea5a55c93b6d, type: 3}
+  - {fileID: 21300000, guid: 4ba7d3d310443c44f8ee134610f3f91f, type: 3}
+  - {fileID: 21300000, guid: 25ef0536726e0764189df2626f759b6c, type: 3}
+  - {fileID: 21300000, guid: 99a6848818149014599799ac7a001797, type: 3}
+  - {fileID: 21300000, guid: 47a3ace3dabc74b4090932b91f85bd6a, type: 3}
+  - {fileID: 21300000, guid: 1835971f0a7dc12448c6f1c51c462947, type: 3}
+  - {fileID: 21300000, guid: 04d9f075732d54340a6103dad57c58a7, type: 3}
+  - {fileID: 21300000, guid: 5c41f181a19cbed4a89d27435ce5c89a, type: 3}
   audioClips:
   - {fileID: 8300000, guid: a3c5e0044c438e742bbb6acea65e8845, type: 3}
   - {fileID: 8300000, guid: 03e71a78977166543968a66e95e904ec, type: 3}
@@ -1967,8 +1968,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 822, y: -445.78}
-  m_SizeDelta: {x: 260, y: 180}
+  m_AnchoredPosition: {x: 855.76996, y: -472.89}
+  m_SizeDelta: {x: 192.46, y: 125.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1894504083
 MonoBehaviour:
