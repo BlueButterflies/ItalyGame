@@ -56,4 +56,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceSciScheSchi/SceSciScheSchiThirdExample.unity
     guid: 5328e357f469b4743b58c23caa2043aa
+  - enabled: 1
+    path: Assets/Scenes/GiaGioGiuCiaCioCiu/GiaGioGiuCiaCioCiuFirstExample.unity
+    guid: 644db3b3b30cdc747af2718274f07133
+  - enabled: 1
+    path: Assets/Scenes/GiaGioGiuCiaCioCiu/GiaGioGiuCiaCioCiuSecondExample.unity
+    guid: 84b6f927f0f483f4983d76532def3e31
+  - enabled: 1
+    path: Assets/Scenes/GiaGioGiuCiaCioCiu/GiaGioGiuCiaCioCiuThirdExample.unity
+    guid: 129726ab91478d3489259f00a48a451c
+  - enabled: 1
+    path: Assets/Scenes/GlGliLiLli/GlGliLiLliFirstExample.unity
+    guid: 2850175ddcc4145439b265400a972326
+  - enabled: 1
+    path: Assets/Scenes/GlGliLiLli/GlGliLiLliSecondExample.unity
+    guid: e42229755f400094395fac1f71ea1f38
+  - enabled: 1
+    path: Assets/Scenes/GlGliLiLli/GlGliLiLliThirdExample.unity
+    guid: f49fdf13fb1c4144fac01cbc1144c306
+  - enabled: 1
+    path: Assets/Scenes/DoppieOSingole/DoppieOSingoleFirstExample.unity
+    guid: a2610132d90c1cd45887c0ac84b54067
+  - enabled: 1
+    path: Assets/Scenes/DoppieOSingole/DoppieOSingoleSecondExample.unity
+    guid: 4f73922baa8627a4b9290b4c8457ddce
+  - enabled: 1
+    path: Assets/Scenes/DoppieOSingole/DoppieOSingoleThirdExample.unity
+    guid: a1c21531ce658db4b88536b999491e97
+  - enabled: 1
+    path: Assets/Scenes/GnNi/GnNiFirstExample.unity
+    guid: cfcc22e139701df47a173a22495bc76c
+  - enabled: 1
+    path: Assets/Scenes/GnNi/GnNiSecondExample.unity
+    guid: 21329b1cda99caa4c9a6c09139835b95
+  - enabled: 1
+    path: Assets/Scenes/GnNi/GnNiThirdExample.unity
+    guid: ba56465c09a2abf428ba20c976955b87
   m_configObjects: {}

@@ -26,9 +26,29 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(11);
     }
 
-    public void SceSciBtn()
+    public void SceSciScheSchiBtn()
     {
         SceneManager.LoadScene(14);
+    }
+
+    public void GiaGioGiuCiaCioCiuBtn()
+    {
+        SceneManager.LoadScene(17);
+    }
+
+    public void GlGliLiLliBtn()
+    {
+        SceneManager.LoadScene(20);
+    }
+
+    public void DoppieOSingoleBtn()
+    {
+        SceneManager.LoadScene(23);
+    }
+
+    public void GnNiBtn()
+    {
+        SceneManager.LoadScene(26);
     }
 
     public void Exit()
@@ -37,7 +57,7 @@ public class MenuController : MonoBehaviour
     }
     #endregion
 
-    #region Menu Controller
+    #region Menu Start Controller
     public void StartBtn()
     {
         SceneManager.LoadScene(1);
