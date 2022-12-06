@@ -92,4 +92,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GnNi/GnNiThirdExample.unity
     guid: ba56465c09a2abf428ba20c976955b87
+  - enabled: 1
+    path: Assets/Scenes/Articoli/ArticoliFirstExample.unity
+    guid: f8d8939c8095da148b82607d3ab4091b
+  - enabled: 1
+    path: Assets/Scenes/Articoli/ArticoliSecondExample.unity
+    guid: fef188668ed3a1041b3d6707d2d71a8e
+  - enabled: 1
+    path: Assets/Scenes/Articoli/ArticoliThirdExample.unity
+    guid: 524c6a939600e3e4585cae8303ab7767
   m_configObjects: {}

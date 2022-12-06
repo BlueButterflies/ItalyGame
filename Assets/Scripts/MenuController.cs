@@ -51,6 +51,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(26);
     }
 
+    public void ArticoliBtn()
+    {
+        SceneManager.LoadScene(29);
+    }
+
     public void Exit()
     {
         Application.Quit();

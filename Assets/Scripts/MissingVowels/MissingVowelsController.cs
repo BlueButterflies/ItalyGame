@@ -149,7 +149,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void SecondBtn()
     {
-        if (word == words[9] || word == words[5] || word == words[7])
+        if (word == words[9] || word == words[5] || word == words[7] || word == words[16])
         {
             audioSource.PlayOneShot(audioClips[0]);
             RandomWordsAndAssingTxtImage();
@@ -188,7 +188,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void FifthBtn()
     {
-        if (word == words[7] || word == words[10])
+        if (word == words[6] || word == words[10])
         {
             audioSource.PlayOneShot(audioClips[0]);
             RandomWordsAndAssingTxtImage();
@@ -252,7 +252,7 @@ public class MissingVowelsController : MonoBehaviour
 
     public void Next()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     #endregion
 }
