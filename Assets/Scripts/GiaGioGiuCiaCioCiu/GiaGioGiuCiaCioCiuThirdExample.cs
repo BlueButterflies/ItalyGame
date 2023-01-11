@@ -11,7 +11,6 @@ public class GiaGioGiuCiaCioCiuThirdExample : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip[] audioClips;
 
-    public Text wordTxt;
     public InputField inputTxt;
     public Image image;
     public Sprite[] sprites;
