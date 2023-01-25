@@ -137,21 +137,29 @@ public class ArticoliFirstExample : MonoBehaviour
     #region Check answers inputs
     public void CheckBtn()
     {
-        if ((inputFirst == "il" || inputFirst == "IL" && inputSecond == "i" || inputSecond == "I") || 
+        if (inputFirst != "" && inputSecond != "")
+        {
+            if ((inputFirst == "il" || inputFirst == "IL" && inputSecond == "i" || inputSecond == "I") ||
             (inputFirst == "la" || inputFirst == "LA" && inputSecond == "le" || inputSecond == "LE") ||
             (inputFirst == "lo" || inputFirst == "LO" && inputSecond == "gli" || inputSecond == "GLI") ||
-            (inputFirst == "l'" || inputFirst == "L'" && inputSecond == "gli" || inputSecond == "GLI" ))
-        {
-            audioSource.PlayOneShot(audioClips[0]);
-            RandomWords();
-            firstInput.text = "";
-            secondInput.text = "";
+            (inputFirst == "l'" || inputFirst == "L'" && inputSecond == "gli" || inputSecond == "GLI") ||
+            (inputFirst == "l'" || inputFirst == "L'" && inputSecond == "l'" || inputSecond == "L'"))
+            {
+                audioSource.PlayOneShot(audioClips[0]);
+                RandomWords();
+                firstInput.text = "";
+                secondInput.text = "";
+            }
+            else
+            {
+                audioSource.PlayOneShot(audioClips[1]);
+                firstInput.text = "";
+                secondInput.text = "";
+            }
         }
         else
         {
             audioSource.PlayOneShot(audioClips[1]);
-            firstInput.text = "";
-            secondInput.text = "";
         }
     }
     #endregion
