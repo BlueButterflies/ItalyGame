@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.iOS.Extensions.Common;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -312,7 +311,7 @@ public class ControllerSecondExample : MonoBehaviour
 
     public void Next()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
     #endregion
 }
