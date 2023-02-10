@@ -15,15 +15,11 @@ public class ArticoliSecondExample : MonoBehaviour
     public InputField inputField;
     private string input; 
 
-    private string[] words = { "Iena", "Scimia", "Cavallo", "Amica", "Automobile", "Astrice", "Piatto", "Orsa", "Fiore", "Torta", "Dolce", "Tavolo", "Sedia",
+    private string[] words = { "Iena", "Scimmia", "Cavallo", "Amica", "Automobile", "Astrice", "Piatto", "Orsa", "Fiore", "Torta", "Dolce", "Tavolo", "Sedia",
                                "Elfo", "Rosa", "Sasso", "Figlia", "Figlio", "Madre", "Padre", "Tartaruga", "Delfino", "Gnomo", "Maglione", "Orologio", "Cavaliere",
                                "Regina", "Re", "Principe", "Anatroccolo", "Albero", "Onda", "Isola", "Elefante", "Ventaglio", "Castello", "Torre", "Toro", "Quadro",
                                "Lavagna", "Ragno", "Pipistrello", "Campana", "Casa", "Stalla", "Maialino", "Canguro", "Miniera", "Farfalla", "Mosca", "Pinguino", "Letto" };
     private string word;
-
-    private bool isUn;
-    private bool isUna;
-    private bool isUN;
     #endregion
 
     public void Start()
