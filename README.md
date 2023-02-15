@@ -1,4 +1,4 @@
-# Italy Game for Android
+# Italy Game for Windosw 2D
 
 <h2>This game is in Italian where you can practice missing vowels, articles, double letters and much more. It was created for first graders. </h2>
 <h3>The game is create in Unity with scrips in C#</h3>
