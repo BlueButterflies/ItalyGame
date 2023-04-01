@@ -7,7 +7,7 @@
     Download for Windows 
   </a>
   <br>
-  <a href="https://drive.google.com/drive/my-drive">
+  <a href="hhttps://drive.google.com/file/d/19n8dAEq63yUU3eGjOc7voutgviqcL9C_/view">
     Download for Android
   </a>
   </h2></div>
