@@ -1,8 +1,18 @@
 # Italy Game for Windosw 2D
 
-<h2>This game is in Italian where you can practice missing vowels, articles, double letters and much more. It was created for first graders. </h2>
+<div><h2>This game is in Italian where you can practice missing vowels, articles, double letters and much more. It was created for first graders. </h2>
 <h3>The game is create in Unity with scrips in C#</h3>
-
+<h2>
+  <a href="https://drive.google.com/file/d/19n8dAEq63yUU3eGjOc7voutgviqcL9C_/view">
+    Download for Windows 
+  </a>
+  <br>
+  <a href="https://drive.google.com/drive/my-drive">
+    Download for Android
+  </a>
+  </h2></div>
+  
+  <div>
 <table>
   <tr>
     <td>
@@ -68,9 +78,11 @@
     </td>
 </tr>
 </table> 
-<p>
+  </div>
+<div><p>
   <h3> This project is licensed under the MIT License - see the</h3>
   <h2><a href="https://github.com/BlueButterflies/ItalyGame/blob/main/LICENSE">LICENSE.md</h2> <h3>file for details </h3>
   </p>
+  </div>
 
  
